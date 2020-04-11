@@ -1,10 +1,10 @@
 
-function nightModeHandler(){
+function nightModeHandler(self){
   var target = document.querySelector('body');
-  if(this.value ==='Night Mode'){
+  if(self.value ==='Night Mode'){
   target.style.backgroundColor='black';
   target.style.color='white';
-  this.value ='Day Mode';
+  self.value ='Day Mode';
 
   var alist = document.querySelectorAll('a');
   i = 0;
@@ -15,7 +15,7 @@ function nightModeHandler(){
   } else {
     target.style.backgroundColor = 'white';
     target.style.color = 'black';
-    this.value ='Night Mode';
+    self.value ='Night Mode';
 
     var alist = document.querySelectorAll('a');
     i = 0;
