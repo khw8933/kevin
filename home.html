@@ -34,7 +34,14 @@ h1 {
   </p>
 
   <h1>Lesson Plans</h1>
-
+    <script> var LPS = ['LP1','LP2','LP3','LP4','LP5','LP6','LP7','LP8','LP9','LP10'];</script>
+    <ol>
+      <script>
+      for(i = 0; i < LPS.length; i++){
+        document.write('<li>'+LPS[i]+'</li>');
+      }
+      </script>
+    </ol>
   <ol>
     <li><a href="1.html">LP1</a></li>
     <li><a href="2.html">LP2</a></li>
@@ -51,7 +58,24 @@ h1 {
   <h1>Flight Test Prep</h1>
 <ol>
   <li><a href="flight.html">Flight items</a></li>
-  <li><a href="ground.html">Ground items</li>
+  <li><a href="ground.html">Ground items</a></li>
+</ol>
+<br></br>
+<div>
+<h2>Checklist</h2>
+    <script>
+    var checklist = ['check1', 'check2', 'check3', 'check4', 'check5'];
+    </script>
+  <ul>
+    <script>
+    var i = 0;
+    while(i < checklist.length){
+    document.write('<li>'+checklist[i]+'</li>');
+    i++
+  }
+    </script>
+  </ul>
+</div>
 
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
@@ -68,7 +92,5 @@ h1 {
   <!--End of Tawk.to Script-->
   <p>
     <div id="disqus_thread"></div>
-  <script>
-
   </p>
 </body>

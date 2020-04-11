@@ -7,13 +7,16 @@
 </head>
 <body>
   <h1><a href="home.html">Home</a></h1>
-  <input type="button" value="Night Mode" onclick="
+  <input id = 'night_day' type="button" value="Night Mode" onclick="
+  if(document.querySelector('#night_day').value ==='Night Mode'){
   document.querySelector('body').style.backgroundColor='black';
   document.querySelector('body').style.color='white';
-  ">
-  <input type="button" value="Day Mode" onclick="
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';
+  document.querySelector('#night_day').value ='Day Mode';
+  } else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('#night_day').value ='Night Mode';
+  }
   ">
 <h2>LP3</h2>
 <!--Start of Tawk.to Script-->
