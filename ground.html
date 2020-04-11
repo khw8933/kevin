@@ -4,16 +4,12 @@
   <title>Ground Portion</title>
   <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
+<script src="nightmode.js"></script>
 </head>
 <body>
   <h1><a href="home.html">Home</a></h1>
-  <input type="button" value="Night Mode" onclick="
-  document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';
-  ">
-  <input type="button" value="Day Mode" onclick="
-  document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';
+  <input id = 'night_day' type="button" value="Night Mode" onclick="
+  nightModeHandler();
   ">
 <h2>Ground Portion</h2>
 <!--Start of Tawk.to Script-->
