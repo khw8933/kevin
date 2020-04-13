@@ -1,27 +1,39 @@
 
+
+var Body = {
+  SetColor: function (color){
+    //document.querySelector('body').style.color= color;
+    $('body').css('color', color);
+  },
+  SetBackgroundColor: function (color){
+    //document.querySelector('body').style.backgroundColor= color;
+    $('body').css('backgroundColor', color)
+  }
+}
+var Link = {
+  SetColor: function (color){
+    //var alist = document.querySelectorAll('a');
+    //i = 0;
+    //while(i<alist.length){
+    //alist[i].style.color = color;
+    //i++
+    $('a').css('color', color);
+  }
+ }
+
+
 function nightModeHandler(self){
   var target = document.querySelector('body');
   if(self.value ==='Night Mode'){
-  target.style.backgroundColor='black';
-  target.style.color='white';
+  Body.SetBackgroundColor('black');
+  Body.SetColor('white');
   self.value ='Day Mode';
-
-  var alist = document.querySelectorAll('a');
-  i = 0;
-  while(i<alist.length){
-  alist[i].style.color = 'powderblue';
-  i++
-  }
+  Link.SetColor('powderblue');
   } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
+  Body.SetBackgroundColor('white');
+  Body.SetColor('black');
     self.value ='Night Mode';
 
-    var alist = document.querySelectorAll('a');
-    i = 0;
-    while(i<alist.length){
-    alist[i].style.color = 'blue';
-    i++
-    }
+  Link.SetColor('blue');
   }
 }

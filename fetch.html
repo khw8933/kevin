@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<input type="button" value="fetch" onclick="fetch('css').then(function(resopnse){
+  response.text().then(function(text){
+    alert(text);
+  })
+})">
+  </body>
+</html>
