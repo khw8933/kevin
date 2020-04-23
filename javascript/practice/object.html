@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<ul>
+<li>kevin</li>
+<li>tina</li>
+<li>minah</li>	
+</ul>	
+<script type="text/javascript">
+	// 객체 (object)는 array 와 같은 맥락으로써 index를 숫자로 사용되는대신 "first" "second" 등으로 문자로 사용된다
+	//객체는 {} 를 쓴다 array 는 [] 씀
+
+//var grades = {'kevin': 10, 'tina': 20, 'minah': 30};
+//위 코드를 밑의 코드처럼 쓸수 있음
+// {} 이것 되신 new Object 를 써서 만들수 있음
+// indext에 할당되어 있는 값을 부르고 싶을때 grades['kevin'] 혹은 grades.kevin 으로 부를수 있음
+//var grades = {};
+
+/*
+var grades = new Object();
+
+grades['kevin'] = 10;
+grades['tina'] = 20
+grades['minah'] = 30
+*/
+
+// object 와 loop
+// array 순서가 있지만 object 는 key 가 있음
+/*
+var arr = ['a', 'b', 'c'];
+
+for(var i = 0; i < arr.length; i++){
+	console.log(arr[i]);
+}
+*/
+// for(key in value)를 쓰게 되면 key = 문자, value = 문자에 할당 된 값이 나오게 됨
+/*var grades = {'kevin': 10, 'tina': 20, 'minah': 30};
+
+for(name in grades){
+	document.write("<li>name: "+name+" value: "+grades[name]+"</li>");
+}
+*/
+
+//객체 지향 프로그래밍
+// this 는 함수(function)가 속해 있는 객체(object)의 가르키는 변수(variable)
+var grades = {
+	'list' : {'kevin' : 10, 'tina' : 20, 'minah' : 30},
+	'show' : function(){
+		for(var name in this.list){
+			console.log(name, this.list[name]);
+		}
+	}
+}
+grades.show();
+</script>
+</body>
+</html>

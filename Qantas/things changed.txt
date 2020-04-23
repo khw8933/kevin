@@ -1,4 +1,0 @@
-Things changed
-
-index.html/ line 487/ transition style:'horizontal' (from 'fading')
-index.html/ line 487/ shuffle : false (from true)

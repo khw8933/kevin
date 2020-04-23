@@ -1,4 +1,0 @@
-1. when night mode is clicked, change the box border to white on every LP websites
-
-2. make the lesson plan list in home.html with javascript code using the loop and when each lesson plan is clicked, open the
-associated .html file using <a> tag. (ex., LP1 is clicked, open LP1.html file)

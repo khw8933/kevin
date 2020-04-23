@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+/*
+	var i = 0;
+	while(i < 10){
+	document.write("coding everybody" +i+ "<br />")
+	i = i + 1
+}
+*/
+
+// while 과 for 의 차이점  (while 은 코드가 떨어져있고 길다)
+// i = i + 1; 과 i++ 는 같다 
+// i++ 랑 ++i 차이점은, ++i 는 사용할때 i 값을 증가시킨다 바로, i++ 는 기존값을 사용하고 그 다음부터 증가시킨다.
+// break (반복문 종료)
+// continue (반복 그 순간 종료 그 후 다시 반복문 재생)
+// 중첩 반복문 (바깥 for 먼저 1번 하고 안쪽 for 반복재생 until false 그다음 바깥 1++, 그후 안쪽 for 반복재생.. and so on)	
+	for(var i = 0; i < 10; i++){
+		for(var j = 0; j < 10; j++) {
+	document.write("coding everybody"+i+j+"<br />")
+	}
+}
+</script>
+</body>
+</html>
