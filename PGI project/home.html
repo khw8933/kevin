@@ -16,6 +16,10 @@ h1 {
   margin-right: auto;
   width: 40%;
 }
+a {
+  text-decoration: none;
+}
+
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163130204-1"></script>
@@ -36,29 +40,22 @@ h1 {
 
   <h1>Lesson Plans</h1>
     <script>
-    var LPS = ['LP1','LP2','LP3','LP4','LP5','LP6','LP7','LP8','LP9','LP10'];
-    var files = ['']
+    var LPS = ['Attitudes and Movements','Straight and Level Flight','Climb, Descending and Turns','Various Airspeeds',
+    'Range and Endurance','Slow Flight','Power Off Stall','Power On Stall','Spin','Spiral Dive','Slippiing','Circuit',
+    'Short Field Takeoff and Landing','Soft Field Takeoff and Landing','Crosswind Takeoff and Landing','Forced Landing',
+  'Illusion Created by Drift','precautionary Landing','Full Panel Instrument Flying','Partial Panel Instrument Flying','VOR','ADF','Night Flying'];
+    var PGI = ['attitude_movement','straight_level','climb_descending_turn','various_airspeed','range_endurance','slow_flight',
+  'poweroff_stall','poweron_stall','spin','spiral_dive','slipping','circuit','shortfield','softfield','crosswind','forced_landing',
+'illusion','precautionary_landing','full_panel','partial_panel','vor','adf','night_flying'];
     </script>
     <ol>
       <script>
       for(i = 0; i < LPS.length; i++){
-        document.write('<li>'+LPS[i]+'</li>');
+        document.write('<li>'+'<a href="'+PGI[i]+'.html">'+LPS[i]+'</a>'+'</li>');
       }
       </script>
     </ol>
 
-<ol>
-    <li><a href="1.html">LP1</a></li>
-    <li><a href="2.html">LP2</a></li>
-    <li><a href="3.html">LP3</a></li>
-    <li>LP4</li>
-    <li>LP5</li>
-    <li>LP6</li>
-    <li>LP7</li>
-    <li>LP8</li>
-    <li>LP9</li>
-    <li>LP10</li>
-</ol>
 
   <h1>Flight Test Prep</h1>
 <ul>

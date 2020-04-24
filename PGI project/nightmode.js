@@ -8,6 +8,10 @@ var Body = {
   SetBackgroundColor: function (color){
     //document.querySelector('body').style.backgroundColor= color;
     $('body').css('backgroundColor', color)
+  },
+  SetBorderColor: function (color){
+  $('table, td, th').css('borderColor', color)
+
   }
 }
 var Link = {
@@ -29,11 +33,13 @@ function nightModeHandler(self){
   Body.SetColor('white');
   self.value ='Day Mode';
   Link.SetColor('powderblue');
+  Body.SetBorderColor('white');
   } else {
   Body.SetBackgroundColor('white');
   Body.SetColor('black');
     self.value ='Night Mode';
 
   Link.SetColor('blue');
+  Body.SetBorderColor('black');
   }
 }

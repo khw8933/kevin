@@ -1,12 +1,3 @@
-1. when night mode is clicked, change the box border to white on every LP websites
-
-2. make the lesson plan list in home.html with javascript code using the loop and when each lesson plan is clicked, open the
-associated .html file using <a> tag. (ex., LP1 is clicked, open LP1.html file)
-
-3.change the name of the title in home.html (ex., LP1 -> attitudes and movements)
-
-4. add mountain fam flight and associated file
-
 5. add uscheck out flight and associated file
 
 6. add multi+ifr flight and associated file 

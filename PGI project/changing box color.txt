@@ -1,5 +1,0 @@
-function gridColor() {
-if(nightmode === true){
-
-}
-}
