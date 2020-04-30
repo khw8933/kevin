@@ -1,9 +1,8 @@
-5. add uscheck out flight and associated file
+1. Fancy Home (slideshow, font, background image etc)
 
-6. add multi+ifr flight and associated file 
+2. collapsible (hide and onclick open the lists in that folder) in home 
 
-7. add Anna's flight test video clip in Flight item file
+3. collapsibles to hide description of each flight test items
 
-8. add flight test guide for both PPL and CPL
+4. Finish CPL ground items
 
-9. For both flight item and ground item, make PPL and CPL sections and add test guide and criteria there
