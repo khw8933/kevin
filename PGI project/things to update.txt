@@ -1,4 +1,4 @@
-1. Fancy Home (slideshow, font, background image etc)
+1. Fancy Home (font, background image etc)
 
 2. collapsible (hide and onclick open the lists in that folder) in home 
 
