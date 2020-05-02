@@ -14,8 +14,14 @@ a {
 #underline{
   text-decoration: underline;
 }
-ol {
+ol, ul {
   line-height: 2;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+
 }
 </style>
 </head>
@@ -25,8 +31,9 @@ ol {
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
+<div class="grid-container">
+    <div class ="grid-item">
 <h2>Group 1 instrument rating</h2>
-
 <script>
 var Lessons = ['U-tracks and VOR','VOR Approach','NDB','NDB Approach','Hold', 'ILS Approach', 'Localizer Approach', 'CYXX Trip Sequence'];
 var Files = ['utracks_vor','vor_approach','ndb','ndb_approach','hold','ils_approach','localizer_approach','cyxx_trip_sequence'];
@@ -38,7 +45,16 @@ var Files = ['utracks_vor','vor_approach','ndb','ndb_approach','hold','ils_appro
   }
   </script>
 </ol>
-
+  </div>
+  <div class="grid-item">
+    <h2>Study Material :</h2>
+      <ul>
+          <li><a href="CAP_GEN_20200326.pdf" target="_blank">CAP GEN</a></li>
+          <li><a href="https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/instrument_procedures_handbook/media/FAA-H-8083-16B.pdf"
+            target="_blank">FAA Instrument Procedures Handbook</a></li>
+      </ul>
+  </div>
+</div>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
