@@ -35,7 +35,7 @@ function nightModeHandler(self){
   Link.SetColor('powderblue');
   Body.SetBorderColor('white');
   } else {
-  Body.SetBackgroundColor('white');
+  Body.SetBackgroundColor('#d3dee2');
   Body.SetColor('black');
     self.value ='Night Mode';
 
