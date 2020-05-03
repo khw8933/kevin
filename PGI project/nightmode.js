@@ -11,7 +11,9 @@ var Body = {
   },
   SetBorderColor: function (color){
   $('table, td, th').css('borderColor', color)
-
+},
+  SetContentBackgroundColor: function (color){
+    $('.content').css('background-color', color)
   }
 }
 var Link = {
@@ -34,6 +36,7 @@ function nightModeHandler(self){
   self.value ='Day Mode';
   Link.SetColor('powderblue');
   Body.SetBorderColor('white');
+  Body.SetContentBackgroundColor('black');
   } else {
   Body.SetBackgroundColor('#d3dee2');
   Body.SetColor('black');
@@ -41,5 +44,6 @@ function nightModeHandler(self){
 
   Link.SetColor('blue');
   Body.SetBorderColor('black');
+  Body.SetContentBackgroundColor('#f1f1f1');
   }
 }
