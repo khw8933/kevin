@@ -1,29 +1,41 @@
 <!doctype html>
 <html>
 <head>
-  <title>IPC</title>
+  <title>IPC Flight Items</title>
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
-ol, ul {
+h1.a{
+  text-align: center;
+}
+ol, ul{
   line-height: 2;
 }
 </style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><a href="home.html">Home</a></h1>
+  <h1><a href="ipc.html">Previous Page</a></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
-<h2>Instrument Proficiency Check</h2>
-<ol>
-  <li><a href="ipc_ground.html">IPC Ground Items</a></li>
-  <li><a href="ipc_flight.html">IPC Flight Items</a></li>
-</ol>
+<h1 class="a">IPC Flight Items</h1>
+<ul>
+  <li>Localizer Approach 07 CYXX</li>
+    <li>Unusual Attitude</li>
+      <li>Hold at HUH</li>
+        <li>3 Emergencies (including single engine RNAV 31 CZBB) (troubleshoot and inform ATC)</li>
+  <ul>
+	   <li>Fire items</li>
+	      <li>Single vacuum</li>
+	         <li>Pitot or static blockage</li>
+	            <li>Communication failure on departure or hold</li>
+    </ul>
+  </ul>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -62,3 +74,4 @@ s.setAttribute('data-timestamp', +new Date());
 <script id="dsq-count-scr" src="//lesson-plans.disqus.com/count.js" async></script>
 </p>
 </body>
+</html>
