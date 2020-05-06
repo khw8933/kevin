@@ -13,7 +13,7 @@ var Body = {
   $('table, td, th').css('borderColor', color)
 },
   SetContentBackgroundColor: function (color){
-    $('.content').css('background-color', color)
+    $('.panel').css('background-color', color)
   }
 }
 var Link = {

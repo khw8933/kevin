@@ -1,12 +1,49 @@
 <!doctype html>
 <html>
 <head>
-  <title>Straight and Level Flight</title>
+  <title>LP2 EX6</title>
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
+<style media="screen">
+  h1.center{
+    text-align: center;
+  }
+  ol,ul {
+    line-height: 2;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+grid-column-gap: 100px;
+padding: 100px;
+  }
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+</style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
@@ -14,7 +51,95 @@
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
-<h2>Straight and Level Flight</h2>
+<h1 class="center">Straight and Level Flight</h1>
+
+<h2>Objective</h2>
+<ul>
+  <li>To teach how to fly straight and level</li>
+    <li>To teach the power setting to achieve straight and level flight</li>
+  </ul>
+<h2>Why/When</h2>
+<ul>
+  <li>Cross-Country/Circuit</li>
+</ul>
+<h2>Threshold Knowledge Test</h2>
+<ul>
+<li>Cruise attitude (wings level, nose slightly below the horizon)</li>
+</ul>
+<div class="grid-container">
+  <div class ="grid-item">
+    <button class="accordion">Straight Flight</button>
+    <div class="panel">
+      <p>
+<h1 class="center"><u>Straight</u></h1>
+<h2>Objective</h2>
+<ul>
+<li>To maintain constant direction</li>
+</ul>
+<h2>Why/When</h2>
+<ul>
+	 <li>X-C/ T/O/ Landing/ Taxi</li>
+ </ul>
+<h2>Procedure</h2>
+<ol>
+<li>Cruise attitude </li>
+<li>Landmark (visual reference)</li>
+<li>Draw line (Landmark and center of the yoke)</li>
+<li>Control yaw & Wings level</li>
+<li>Instrument: AI – Compass/HI</li>
+</ol>
+    </p>
+  </div>
+</div>
+  <div class ="grid-item">
+    <button class="accordion">Level Flight</button>
+    <div class="panel">
+      <p>
+<h1 class="center"><u>Level</u></h1>
+<h2>Objective</h2>
+<ul>
+<li>To maintain constant altitude</li>
+</ul>
+<h2>Why/When</h2>
+<ul>
+<li>X-C/ Circuit/ Airspace intrusion/ ATC</li>
+</ul>
+<h2>Procedure</h2>
+<ol>
+<li>Cruise attitude</li>
+<li>Maintain the gap</li>
+<li>Trim (Explain trim wheel: why do we use and how do we use)</li>
+</ol>
+<h2>Power equation</h2>
+<ul>
+<li>Power + Attitude + Trim = Performance</li>
+<li>2300RPM + Cruise + Trim = 90KIAS (Explain why we use 2300RPM: POH normal section 4 & 5 Performance section)</li>
+</ul>
+<h2>Safety</h2>
+<ul>
+<li>False horizon in mountain areas (Visualize where the sky meets the sea and superimpose this horizon on the terrain as if the mountains were transparent)</li>
+<li>Collision avoidance (Convergence & what action should be taken)</li>
+</ul>
+      </p>
+    </div>
+  </div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

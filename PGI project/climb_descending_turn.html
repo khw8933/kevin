@@ -1,12 +1,51 @@
 <!doctype html>
 <html>
 <head>
-  <title>Climb,Descending and Turns</title>
+  <title>LP2 EX7,8,9</title>
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
+<style media="screen">
+  h1.center{
+    text-align: center;
+  }
+#top_header{
+  margin-bottom: 100px;
+}
+  ol,ul{
+    line-height: 2;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+grid-column-gap: 100px;
+  }
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+</style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
@@ -14,7 +53,187 @@
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
-<h2>Climb,Descending and Turns</h2>
+
+<h1 class="center" id="top_header">Climb,Descending and Turns</h1>
+<div class="grid-container">
+  <div class ="grid-item">
+    <button class="accordion">Climb</button>
+    <div class="panel">
+      <p>
+	<h1 class="center"><u>Climb (EX7)</u></h1>
+<h2>Objective</h2>
+<ul>
+   <li>To gain altitude</h2>
+  </ul>
+<h2>Why/When</h2>
+<ul>
+ <li>Take-off/ Overshoot/ Obstacle and traffic avoidance</li>
+</ul>
+<h2>Threshold Knowledge Test</h2>
+<ul>
+ <li>How to produce nose-up attitude</li>
+</ul>
+<h2>Procedures</h2>
+<h3>Entry:</h3>
+<ul>
+<li>	Cruise attitude</li>
+<li>	Cockpit check L -> R</li>
+<li>	Scan traffic “Clear Above”</li>
+<li>	Landmark</li>
+</ul>
+<ol>
+<li>	A: Nose up</li>
+<li>	P: Full (control yaw)</li>
+<li>	T: Trim</li>
+</ol>
+<h3>Maintain:</h3>
+<ol>
+	<li>Straight(wings level)</li>
+	<li>Attitude (trim)</li>
+	<li>Control yaw</li>
+	<li>Check instruments (AI,ASI,Altimeter,VSI)</li>
+</ol>
+<h3>Recovery:</h3>
+<ul>
+	<li>“100ft to go”</li>
+	<li>“initiate the leveloff at 50ft before the target altitude”</li>
+</ul>
+<ol>
+<li>	A: Cruise</li>
+<li>	P: Cruise</li>
+<li>	T: Trim</li>
+</ol>
+<h2>Safety</h2>
+<ul>
+  <li>Prolonged climb (engine heating)(oil temperature & pressure)</li>
+    <li>Sterile cockpit ( no talking during critical phase of flight such as landing and take-off)</li>
+  </ul>
+</p>
+</div>
+</div>
+  <div class ="grid-item">
+    <button class="accordion">Descending</button>
+    <div class="panel">
+      <p>
+<h1 class="center"><u>Descending (EX8)</u></h1>
+	<h2>Objective</h2>
+<ul>
+   <li>To lose altitude</li>
+</ul>
+  <h2>Why/When</h2>
+  <ul>
+    <li>Landing/ ATC assigns lower altitude/ Engine failure (glide)</li>
+  </ul>
+	<h2>Threshold Knowledge Test</h2>
+<ul>
+  <li>How to produce nose-down attitude</li>
+</ul>
+	<h2>Procedures</h2>
+<h3>Entry:</h3>
+<ul>
+<li>	Cruise attitude</li>
+<li>	Cockpit check L -> R</li>
+<li>	Scan traffic “clear below”</li>
+<li>	Landmark</li>
+</ul>
+<ol>
+<li>	P: Idle</li>
+<li>	A: Nose-down (might need back pressure when the nose is down)</li>
+<li>	T: Trim</li>
+</ol>
+<h3>Maintain:</h3>
+<ol>
+<li>	Straight (Wings level)</li>
+<li>	Attitude (Trim)</li>
+<li>	Control Yaw</li>
+<li>	Check instruments (AI,ASI,Altimeter,VSI)</li>
+</ol>
+<h3>Recovery:</h3>
+<ul>
+<li>	“100ft to go”</li>
+<li>	“initiate the leveloff at 50ft before the target altitude”</li>
+</ul>
+<ol>
+<li>	P: Cruise</li>
+<li>	A: Cruise</li>
+<li>  T: Trim</li>
+</ol>
+<h2>Safety</h2>
+<ul>
+ <li>Prolonged descent with low power (engine warm every 500ft)</li>
+</ul>
+</p>
+</div>
+</div>
+  <div class ="grid-item">
+    <button class="accordion">Turns</button>
+    <div class="panel">
+      <p>
+<h1 class="center"><u>Turns (EX9)</u></h1>
+
+<h2>Objective</h2>
+<ul>
+<li>To change the heading of aircraft</li>
+</ul>
+<h2>Why/When</h2>
+<ul>
+<li>ATC assigns heading/ Obstacle and traffic avoidance/ Cloud avoidance</li>
+</ul>
+<h2>Threshold Knowledge Test</h2>
+<ul>
+<li>How to produce bank attitude</li>
+</ul>
+<h2>Essential Background Knowledge</h2>
+<ul>
+<li>Types of turn: Gentle(0-15), Medium(15-30), and Steep(>30)</li>
+</ul>
+<h2>Procedures</h2>
+<h3>Entry:</h3>
+<ul>
+<li>	Cruise attitude</li>
+<li>	Cockpit check L -> R</li>
+<li>	Scan traffic “clear L/R”</li>
+<li>	Pick 2 landmarks i.e., one in front and the other one where you want to turn</li>
+</ul>
+<ol>
+<li>	Roll (move the control column in the direction of the turn)</li>
+</ol>
+<h3>Maintain:</h3>
+<ul>
+<li>	Angle of bank: control column L/R</li>
+<li>	Altitude: control column back/forward</li>
+<li>	Airspeed: power</li>
+<li>	Control yaw</li>
+<li>	Scan tfc</li>
+</ul>
+<h3>Recovery:</h3>
+<ol>
+<li>	Roll wings level (when you see the landmark)</li>
+</ol>
+<h2>Safety</h2>
+<ul>
+<li>Scan tfc and always say “clear L/R/A/B</li>
+</ul>
+</p>
+</div>
+  </div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
