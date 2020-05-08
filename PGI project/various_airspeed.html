@@ -1,12 +1,55 @@
 <!doctype html>
 <html>
 <head>
-  <title>Various Airspeeds</title>
+  <title>LP3</title>
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
+<style media="screen">
+  ol,ul{
+    line-height: 2;
+  }
+  h1.center{
+    text-align: center;
+  }
+  h2{
+    text-decoration: underline;
+  }
+  table, td, th{
+    border: 1px solid black;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  grid-column-gap: 100px;
+  }
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 300px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin-left: 25px
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+</style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
@@ -14,7 +57,239 @@
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
-<h2>Various Airspeeds</h2>
+
+<h1 class="center">Various Airspeeds</h1>
+<div class="grid-container">
+  <div class ="grid-item">
+    <button class="accordion">Straight and Level</button>
+    <div class="panel">
+      <p>
+<h2>Straight and Level Flight</h2>
+<h3>Objective</h3>
+<ul>
+<li>How to fly straight and level at various airspeeds</li>
+<li>Relationship between Power/Nose/Yaw</li>
+</ul>
+<h3>Why/When</h3>
+<ul>
+	<li>Traffic separation</li>
+	<li>ATC instructions</li>
+	<li>X-C (save time or fuel)</li>
+	<li>Weather deterioration</li>
+</ul>
+<h3>Threshold Knowledge Test</h3>
+<ul>
+	<li>Straight and Level flight (heading & altitude)</li>
+	<li>Power equation (power+attitude+trim = performance)</li>
+</ul>
+<h3>Essential Background Knowledge</h3>
+<strong>Effect of power /Nose /Yaw during S&L Flight</strong>
+<br></br>
+<table style="width:100%">
+  <colgroup>
+      <col span="3" style="width:300px">
+    </colgroup>
+  <tr>
+    <th></th>
+    <th>Power</th>
+    <th>Nose</th>
+    <th>Yaw</th>
+  </tr>
+  <tr>
+    <th>Effect</th>
+    <th>&#8593;</th>
+    <th>&#8593;</th>
+    <th>++</th>
+  </tr>
+  <tr>
+    <th>Effect</th>
+    <th>&#8595;</th>
+    <th>&#8595;</th>
+    <th>+</th>
+  </tr>
+  </table>
+<h3>Procedures</h3>
+<table style="width:100%">
+  <colgroup>
+      <col span="4" style="width:300px">
+    </colgroup>
+  <tr>
+    <th>Airspeed/Performance</th>
+    <th>① Power</th>
+    <th>② Attitude</th>
+    <th>③ Trim</th>
+  </tr>
+  <tr>
+    <th>90kts</th>
+    <th>2300RPM</th>
+    <th>Cruise</th>
+    <th>Trim</th>
+  </tr>
+  <tr>
+    <th>95kts</th>
+    <th>2400RPM</th>
+    <th>Cruise</th>
+    <th>Trim</th>
+  </tr>
+  <tr>
+    <th>85kts</th>
+    <th>2200RPM</th>
+    <th>Cruise</th>
+    <th>Trim</th>
+  </tr>
+  <tr>
+    <th>75kts</th>
+    <th>2000RPM</th>
+    <th>Cruise</th>
+    <th>Trim</th>
+  </tr>
+  <tr>
+    <th>65kts</th>
+    <th>1900RPM</th>
+    <th>Cruise</th>
+    <th>Trim</th>
+  </tr>
+  </table>
+<ul>
+  <li>We will see about ±5 kts changes on the airspeed when there is ±100 RPM change</li>
+    <li>Add power -> the nose will move up -> add forward pressure to maintain the cruise attitude -> trim (the nose is going to be slightly lower than normal cruise)</li>
+      <li>Reduce power -> the nose will move down -> add back pressure to maintain the cruise attitude -> trim (the nose is going to be slightly above than normal cruise)</li>
+</ul>
+<img src="straight_level.jpg" style="width:100%"></img>
+</p>
+</div>
+</div>
+
+  <div class ="grid-item">
+    <button class="accordion">Climb</button>
+    <div class="panel">
+      <p>
+<h2>Climb</h2>
+<h3>Objective</h3>
+<ul>
+	<li>How to climb at various airspeeds</li>
+	<li>Relationship between Nose/Airspeed during climb</li>
+</ul>
+<h3>When/Why</h3>
+<ul>
+  <li>Obstacle & traffic avoidance</li>
+    <li>ATC instructions</li>
+      <li>Engine cooling</li>
+        <li>Visibility</li>
+</ul>
+<h3>Threshold Knowledge Test</h3>
+<ul>
+-	Climb(APT)
+</ul>
+<h3>Essential Background Knowledge</h3>
+Effect of Nose/Airspeed during climb
+<table style="width:100%">
+  <colgroup>
+      <col span="3" style="width:300px">
+    </colgroup>
+  <tr>
+    <th></th>
+    <th>Nose</th>
+    <th>IAS</th>
+  </tr>
+  <tr>
+    <th>Effect</th>
+    <th>&#8593;</th>
+    <th>&#8595;</th>
+      </tr>
+  <tr>
+    <th>Effect</th>
+    <th>&#8595;</th>
+    <th>&#8593;</th>
+      </tr>
+  </table>
+
+
+<h3>Procedures</h3>
+<ul>
+	<li>Cockpit check L->R</li>
+	<li>Visual reference</li>
+	<li>Scan for traffic</li>
+  A)<br>
+  P)<br>
+  T)<br>
+ <li>Climb airspeed approximately 75kts with normal nose-up attitude</li>
+ <li>To decrease airspeed -> raise the nose</li>
+ <li>To increase airspeed -> lower the nose</li>
+</ul>
+</p>
+</div>
+</div>
+
+  <div class ="grid-item">
+    <button class="accordion">Descent</button>
+    <div class="panel">
+      <p>
+<h2>Descent</h2>
+<h3>Objective</h3>
+<ul>
+	<li>How to descend at various airspeeds</li>
+	<li>Power assisted descent</li>
+	<li>Point of zero movement</li>
+</ul>
+<h3>Why/When</h3>
+<ul>
+	<li>ATC instructions</li>
+	<li>X-C</li>
+	<li>Obstacle clearance(steeper descent to clear trees)</li>
+	<li>Engine failure(glide)</li>
+</ul>
+<h3>Threshold Knowledge Test</h3>
+<ul>
+  <li>Descending(PAT)</li>
+</ul>
+<h3>Essential Background Knowledge</h3>
+<ul>
+	<li>Effect of Nose/Airspeed during descent</li>
+	<li>Point of zero movement</li>
+	<li>Power assisted descending</li>
+</ul>
+<h3>Procedures</h3>
+<ul>
+  <li>Cockpit check L->R</li>
+    <li>Visual reference</li>
+      <li>Scan for traffic</li>
+P)<br>
+A)<br>
+T)<br>
+
+  <li>Descending at approximately 75kts with normal nose-down attitude</li>
+    <li>To increase airspeed -> lower the nose</li>
+      <li>To decrease airspeed -> raise the nose</li>
+</ul>
+<ul>
+If power is already at idle (power off descent)
+	<li>Point of zero movement (the numbers)</li>
+	<li>If the numbers are moving closer -> reduce power</li>
+	<li>If the numbers are moving away -> add power</li>
+</ul>
+</p>
+</div>
+</div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
