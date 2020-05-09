@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>LP2 EX7,8,9</title>
-  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <script src="nightmode.js"></script>
@@ -21,13 +21,14 @@
     display: grid;
     grid-template-columns: auto auto auto;
 grid-column-gap: 100px;
+max-width: 100%;
   }
   .accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
     padding: 18px;
-    width: 300px;
+    width: 100%;
     border: none;
     text-align: left;
     outline: none;
@@ -45,6 +46,9 @@ grid-column-gap: 100px;
     background-color: white;
     overflow: hidden;
   }
+  * {
+  box-sizing: border-box;
+}
 </style>
 </head>
 <body>
