@@ -46,14 +46,46 @@ grid-column-gap: 100px;
   * {
   box-sizing: border-box;
 }
+#nextprevious{
+  float:right;
+  margin-right: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+.round {
+  border-radius: 50%;
+}
 </style>
 </head>
 <body>
+  <script>
+function goBack() {
+  window.history.back();
+}
+</script>
   <script>backgroundColorHandler();</script>
   <h1><a href="home.html">Home</a></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
+  <a href="climb_descending_turn.html" class="next" id="nextprevious">Next &raquo;</a>
+  <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 <h1 class="center">Straight and Level Flight</h1>
 
 <h2>Objective</h2>

@@ -11,6 +11,27 @@
 table, td, th{
   border: 1px solid black;
 }
+#nextprevious{
+  float:right;
+  margin-right: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
   </style>
 </head>
 <body>
@@ -19,6 +40,9 @@ table, td, th{
 <input type="button" value="Night Mode" onclick="
 nightModeHandler(this);
 ">
+<br></br>
+<a href="straight_level.html" class="next" id="nextprevious">Next &raquo;</a>
+
 
 <h1 style= "text-align: center">Attitues and Movements</h1>
 
@@ -137,6 +161,7 @@ control the yaw by rudder (Slipstream, Aileron drag)
 <li>Report traffic: clock system (ex. Traffic 2 o clock), altitude, head-on, converging, climbing and descending</li>
 </ol>
 </p>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
