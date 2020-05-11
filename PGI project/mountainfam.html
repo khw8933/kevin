@@ -17,12 +17,21 @@ div.a {
 ul.b{
   line-height: 2;
 }
-
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+span::after{
+  content: " >";
+  color: blue;
+}
 </style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><a href="home.html">Home</a></h1>
+  <h1><span><a href="home.html">Home</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
@@ -42,14 +51,14 @@ ul.b{
 <li>Visibility at or better than 10 SM.</li>
 <li>Winds not more than 20 Knots.</li>
 </ol>
-Basically SKC!!!
-Also review (katabatic and anabatic winds on page 27)
-<a href="https://www.navcanada.ca/EN/media/Publications/Local%20Area%20Weather%20Manuals/LAWM-Arctic-2-EN.pdf" target="_blank">Katabatic and anabatic winds</a>
+Basically SKC!!!<br>
+(Also review
+<a href="https://www.navcanada.ca/EN/media/Publications/Local%20Area%20Weather%20Manuals/LAWM-Arctic-2-EN.pdf#page=19" target="_blank">Katabatic and anabatic winds</a>)
 </p>
 <p>
 <br><h2>Radio Communication in Controlled Airspace:</h2></br>
 	<strong><font size="4">What kind of airspace are we in?</font></strong>
-(review airspace: <a href="https://www.tc.gc.ca/media/documents/ca-publications/AIM_2018-2_EN-ACCESS.pdf" target="_blank">Airspace</a> ; look at page 196)
+(review <a href="https://www.tc.gc.ca/media/documents/ca-publications/AIM_2018-2_EN-ACCESS.pdf#page=226" target="_blank">Airspace</a>)
 </p>
 <p>
 <br>&nbsp;<strong><font size="4">What frequencies should we use?</font></strong></br>

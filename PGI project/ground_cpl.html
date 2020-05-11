@@ -20,11 +20,21 @@ h1.a{
 h3.b{
   display: inline;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+span::after{
+  content: " >";
+  color: blue;
+}
 </style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><a href="CPL.html">Previous Page</a></h1>
+  <h1><span><a href="CPL.html">Previous Page</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
