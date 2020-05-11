@@ -52,14 +52,49 @@
   * {
   box-sizing: border-box;
 }
+#nextprevious{
+  float:right;
+  margin-right: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+
+  text-decoration: underline;
+}
+a{
+  text-decoration: none;
+}
+span::after{
+  content: " >";
+  color: blue;
+}
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
 </style>
 </head>
 <body>
+  <script>
+function goBack() {
+  window.history.back();
+}
+</script>
   <script>backgroundColorHandler();</script>
-  <h1><a href="home.html">Home</a></h1>
+  <h1><span><a href="home.html">Home</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
+  <button onclick="window.location.href = 'range_endurance.html';" class="next" id="nextprevious">Next &raquo;</button>
+  <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 
 <h1 class="center">Various Airspeeds</h1>
 <div class="grid-container">

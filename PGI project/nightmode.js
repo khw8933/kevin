@@ -14,7 +14,8 @@ var Body = {
 },
   SetContentBackgroundColor: function (color){
     $('.panel').css('background-color', color)
-  }
+  },
+
 }
 var Link = {
   SetColor: function (color){
@@ -35,6 +36,7 @@ function nightModeHandler(self){
   Body.SetColor('white');
   self.value ='Day Mode';
   Link.SetColor('powderblue');
+
   Body.SetBorderColor('white');
   Body.SetContentBackgroundColor('black');
   } else {
@@ -43,6 +45,7 @@ function nightModeHandler(self){
     self.value ='Night Mode';
 
   Link.SetColor('blue');
+
   Body.SetBorderColor('black');
   Body.SetContentBackgroundColor('#f1f1f1');
   }

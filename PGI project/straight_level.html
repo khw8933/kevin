@@ -14,6 +14,16 @@
   ol,ul {
     line-height: 2;
   }
+  a:hover {
+    text-decoration: underline;
+  }
+  a{
+    text-decoration: none;
+  }
+  span::after{
+    content: " >";
+    color:blue;
+  }
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -54,10 +64,6 @@ grid-column-gap: 100px;
   padding: 8px 16px;
 }
 
-a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
 .next {
   background-color: #4CAF50;
@@ -68,9 +74,7 @@ a:hover {
   background-color: #f1f1f1;
   color: black;
 }
-.round {
-  border-radius: 50%;
-}
+
 </style>
 </head>
 <body>
@@ -80,11 +84,11 @@ function goBack() {
 }
 </script>
   <script>backgroundColorHandler();</script>
-  <h1><a href="home.html">Home</a></h1>
+  <h1><span><a href="home.html">Home</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
-  <a href="climb_descending_turn.html" class="next" id="nextprevious">Next &raquo;</a>
+  <button onclick="window.location.href = 'climb_descending_turn.html';" class="next" id="nextprevious">Next &raquo;</button>
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 <h1 class="center">Straight and Level Flight</h1>
 

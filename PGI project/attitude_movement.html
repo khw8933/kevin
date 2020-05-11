@@ -18,10 +18,16 @@ table, td, th{
   display: inline-block;
   padding: 8px 16px;
 }
+a{
+  text-decoration: none;
+}
+span::after{
+  content:" >";
+  color: blue;
+}
 
 a:hover {
-  background-color: #ddd;
-  color: black;
+  text-decoration: underline;
 }
 
 .next {
@@ -29,24 +35,22 @@ a:hover {
   color: white;
 }
 
-.round {
-  border-radius: 50%;
-}
+
   </style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><a href="home.html">Home</a></h1>
+  <h1><span><a href="home.html">Home</a></span></h1>
 <input type="button" value="Night Mode" onclick="
 nightModeHandler(this);
 ">
 <br></br>
-<a href="straight_level.html" class="next" id="nextprevious">Next &raquo;</a>
+<button onclick="window.location.href = 'straight_level.html';" class="next" id="nextprevious">Next &raquo;</button>
 
 
 <h1 style= "text-align: center">Attitues and Movements</h1>
 
-<a href="http://www.studyflight.com/attitudes-and-movements/" target="_blank" title="referencing website">ATTITUDES AND MOVEMENTS</a>
+<span><a href="http://www.studyflight.com/attitudes-and-movements/" target="_blank" title="referencing website">ATTITUDES AND MOVEMENTS</a></span>
 <br></br>
 <h3>Objective</h3>
 <strong>To teach:</strong>

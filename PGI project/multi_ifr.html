@@ -11,8 +11,12 @@
 a {
   text-decoration: none;
 }
-#underline{
+a:hover {
   text-decoration: underline;
+}
+span::after{
+  content: " >";
+  color: blue;
 }
 ol, ul {
   line-height: 2;
@@ -27,7 +31,7 @@ ol, ul {
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><a href="home.html" id="underline">Home</a></h1>
+  <h1><span><a href="home.html">Home</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
