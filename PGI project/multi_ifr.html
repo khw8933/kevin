@@ -14,9 +14,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
-span::after{
+.pseudo::after{
   content: " >";
-  color: blue;
+}
+.pseudo{
+  color:blue;
 }
 ol, ul {
   line-height: 2;
@@ -31,13 +33,13 @@ ol, ul {
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><span><a href="home.html">Home</a></span></h1>
+  <h1><span class='pseudo'><a href="home.html">Home</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
 <div class="grid-container">
     <div class ="grid-item">
-<h2>Group 1 instrument rating</h2>
+<h2>Group 1 Instrument Rating</h2>
 <script>
 var Lessons = ['U-tracks and VOR','VOR Approach','NDB','NDB Approach','Hold', 'ILS Approach', 'Localizer Approach', 'CYXX Trip Sequence'];
 var Files = ['utracks_vor','vor_approach','ndb','ndb_approach','hold','ils_approach','localizer_approach','cyxx_trip_sequence'];

@@ -14,19 +14,21 @@ a {
 a:hover {
   text-decoration: underline;
 }
-span::after{
+.pseudo::after{
   content: " >";
-  color: blue;
+}
+.pseudo{
+  color:blue;
 }
 </style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><span><a href="home.html">Home</a></span></h1>
+  <h1><span class='pseudo'><a href="home.html">Home</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
-<h2>Multi engine rating</h2>
+<h2>Multi Engine Rating</h2>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

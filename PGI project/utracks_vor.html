@@ -17,18 +17,34 @@ a {
 a:hover {
   text-decoration: underline;
 }
-span::after{
+.pseudo::after{
   content: " >";
-  color: blue;
+}
+.pseudo{
+  color:blue;
+}
+#nextprevious{
+  float:right;
+  margin-right: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+.next {
+  background-color: #4CAF50;
+  color: white;
 }
 </style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><span><a href="multi_ifr.html">Previous Page</a></span></h1>
+  <h1><span class='pseudo'><a href="multi_ifr.html">Previous Page</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
+
+  <button onclick="window.location.href = 'vor_approach.html';" class="next" id="nextprevious">Next &raquo;</button>
+
 <h1 class="a">U-Tracks and VOR</h1>
 
 <h3>Objective</h3>

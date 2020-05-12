@@ -33,21 +33,26 @@
   a:hover {
     text-decoration: underline;
   }
-  span::after{
+  .pseudo::after{
     content: " >";
-    color: blue;
+  }
+  .pseudo{
+    color:blue;
+  }
+  #inline{
+    display: inline;
   }
 </style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><span><a href="home.html">Home</a></span></h1>
+  <h1><span class='pseudo'><a href="home.html">Home</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
 <h1 class="a">US checkout</h1>
 
-<h3>ROUTE: CZBB-KBLI-KBFI-CZBB</h3>
+<h3 id='inline'>ROUTE:</h3>&nbsp; CZBB-KBLI-KBFI-CZBB
 
 <h3>The day before:</h3>
 <ul>

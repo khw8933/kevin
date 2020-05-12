@@ -67,9 +67,11 @@ a:hover {
 a{
   text-decoration: none;
 }
-span::after{
+.pseudo::after{
   content: " >";
-  color: blue;
+}
+.pseudo{
+  color:blue;
 }
 .next {
   background-color: #4CAF50;
@@ -89,7 +91,7 @@ function goBack() {
 }
 </script>
   <script>backgroundColorHandler();</script>
-  <h1><span><a href="home.html">Home</a></span></h1>
+  <h1><span class='pseudo'><a href="home.html">Home</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">

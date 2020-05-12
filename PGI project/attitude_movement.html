@@ -21,9 +21,11 @@ table, td, th{
 a{
   text-decoration: none;
 }
-span::after{
-  content:" >";
-  color: blue;
+.pseudo::after{
+  content: " >";
+}
+.pseudo{
+  color:blue;
 }
 
 a:hover {
@@ -40,11 +42,11 @@ a:hover {
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><span><a href="home.html">Home</a></span></h1>
+  <h1><span class='pseudo'><a href="home.html">Home</a></span></h1>
 <input type="button" value="Night Mode" onclick="
 nightModeHandler(this);
 ">
-<br></br>
+
 <button onclick="window.location.href = 'straight_level.html';" class="next" id="nextprevious">Next &raquo;</button>
 
 

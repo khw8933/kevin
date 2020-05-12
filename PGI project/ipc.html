@@ -11,11 +11,23 @@
 ol, ul {
   line-height: 2;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.pseudo::after{
+  content: " >";
+}
+.pseudo{
+  color:blue;
+}
 </style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><a href="home.html">Home</a></h1>
+  <h1><span class='pseudo'><a href="home.html">Home</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">

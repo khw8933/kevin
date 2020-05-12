@@ -27,7 +27,12 @@ var Link = {
     $('a').css('color', color);
   }
  }
+var Pseudo = {
+  SetPseudoColor: function (color){
+  document.querySelector('.pseudo').style.color = color;
 
+  }
+}
 
 function nightModeHandler(self){
   var target = document.querySelector('body');
@@ -36,6 +41,7 @@ function nightModeHandler(self){
   Body.SetColor('white');
   self.value ='Day Mode';
   Link.SetColor('powderblue');
+  Pseudo.SetPseudoColor('powderblue');
 
   Body.SetBorderColor('white');
   Body.SetContentBackgroundColor('black');
@@ -45,7 +51,7 @@ function nightModeHandler(self){
     self.value ='Night Mode';
 
   Link.SetColor('blue');
-
+  Pseudo.SetPseudoColor('blue');
   Body.SetBorderColor('black');
   Body.SetContentBackgroundColor('#f1f1f1');
   }

@@ -26,15 +26,17 @@ a {
 a:hover {
   text-decoration: underline;
 }
-span::after{
+.pseudo::after{
   content: " >";
-  color: blue;
+}
+.pseudo{
+  color:blue;
 }
 </style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><span><a href="PPL.html">Previous Page</a></span></h1>
+  <h1><span class='pseudo'><a href="PPL.html">Previous Page</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
