@@ -8,6 +8,12 @@
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+ol, ul{
+  line-height: 2;
+}
+h1.center{
+  text-align: center;
+}
 #nextprevious{
   float:right;
   margin-right: 20px;
@@ -53,7 +59,84 @@ function goBack() {
   <button onclick="window.location.href = 'poweron_stall.html';" class="next" id="nextprevious">Next &raquo;</button>
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 
-<h2>Power Off Stall</h2>
+<h1 class='center'>Power Off Stall</h1>
+
+<h2>Objective</h2>
+<strong>To teach:</strong>
+<ul>
+	<li>To recognize the symptoms of an approaching stall</li>
+	<li>How to enter the stall</li>
+	<li>To recognize the stall</li>
+	<li>How to recover from the stall with minimum loss of altitude</li>
+</ul>
+<h2>Motivation</h2>
+<ul>
+	<li><strong>When:</strong> Takeoff (engine failure, if we raise the nose too high -> glide 60kts) & Landing (If flare too high, pitching the nose too high and quickly)</li>
+	<li><strong>Why:</strong> An aircraft is so close to the ground with very low speed and raise the nose fairly quickly. We need to recognize the symptoms and prevent the stall</li>
+</ul>
+<h2>Threshold Knowledge Test</h2>
+<ul>
+	<li>Symptoms of slow flight</li>
+	<li>Entry of slow flight</li>
+</ul>
+<h2>Essential background Knowledge</h2>
+<ul>
+  <li><strong>Definition of stall(FTM P.75):</strong> (Show the pictures of airflow separation)</li>
+	A stall is a condition when the angle of attack of airfoil increases beyond the critical angle of attack such that lift begins to decrease (lift still exists)
+  <li><strong>That angle of attack is called “critical angle of attack” = 16-18°, depends on the aircraft</strong></li>
+
+  <li><strong>Factors affecting stall:</strong><br>
+    (POH- Section 1 General -> Vsl & Vso speeds based on the most forward center of gravity)<br>
+    (POH – Section 5 Performance stall speeds, show weight, angle of bank and flaps affect stall speeds)</li>
+
+  <li><strong>Symptoms of an approaching stall (TKT slow flight symptoms):</strong></li>
+<ol>
+	<li>Nose high</li>
+	<li>Airspeed low</li>
+	<li>Control less responsive</li>
+	<li>Power greater than maximum endurance</li>
+	<li>Buffeting(turbulent air hitting the tail causing the vibration)</li>
+	<li>Stall warning horn(5-10kts before the stall)</li>
+</ol>
+	<li><strong>Symptoms at the stall:</strong></li>
+<ol>
+	<li>Loss of altitude (altimeter & VSI)</li>
+	<li>Nose-drop (center of gravity is located ahead of the center of lift(pressure). The weight of the aircraft causes the nose to drop)</li>
+	<li>Wing-drop (if yaw is not controlled & skidding or slipping) (one wing has a higher angle of attack than the other)</li>
+</ol>
+</ul>
+
+<h2>Procedures</h2>
+<ul>
+  <li><strong>HALT check</strong> (carb heat on & mixture rich)</li>
+
+    <li><strong>Entry:</strong> (ask how to enter slow flight then explain how to enter stall)</li>
+<ol>
+	<li>P: Idle</li>
+	<li>A: Nose up (maintain altitude)</li>
+	<li>T: trim (if necessary)</li>
+</ol>
+	<li><strong>Recovery:</strong></li>
+	<u>Power-off recovery</u> (engine failure at takeoff):
+<ol>
+	<li>A: Nose down (Glide airspeed 60kts -> a little bit lower than cruise attitude)</li>
+	<li>T: Trim</li>
+</ol>
+	<u>Power-on recovery</u> (landing with power idle but power is still available to use):
+<ol>
+	<li>A: Nose down (below cruise)</li>
+	<li>P: Full (control yaw)</li>
+	<li>Climb back to desired altitude</li>
+</ol>
+</ul>
+<h2>Safety</h2>
+<ul>
+	<li>HALT check</li>
+	<li>No maintain</li>
+	<li>Don’t use aileron when wing drops (If a wing starts to drop and you lower the aileron on that wing to raise it, you increase the wing’s angle of attack and aggravate the stall)</li>
+</ul>
+
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
