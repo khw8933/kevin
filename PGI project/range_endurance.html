@@ -8,6 +8,15 @@
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+table, td, th{
+  border: 1px solid black;
+}
+ol,ul{
+  line-height: 2;
+}
+#color{
+  color:red;
+}
 #nextprevious{
   float:right;
   margin-right: 20px;
@@ -38,6 +47,7 @@ a{
   background-color: #f1f1f1;
   color: black;
 }
+
 </style>
 </head>
 <body>
@@ -55,6 +65,160 @@ function goBack() {
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 
 <h2>Range and Endurance</h2>
+<ol>
+  <li><strong>Best angle of climb (Vx)</strong> (Airspeed that can get you to the highest altitude given altitude)</li>
+<ul>
+<li><strong><u>OBJ:</u></strong> How to climb at best angle of climb speed</li>
+<li><strong><u>MOT:</u></strong> For obstacle clearance</li>
+<li><strong><u>TKT:</u></strong> Various airspeeds (how to increase/decrease airspeed)</li>
+<li><strong><u>PROC:</u></strong> Raise the nose more from the Vy speed</li>
+<li><strong><u>EBK:</u></strong> 54kts with 10degree flaps/ 55kts without flaps as per POH (Maximum height given distance)</li>
+</ul>
+<br>
+	<li><strong>Best rate of climb (Vy)</strong> (Airspeed that can get you to the highest altitude given time)</li>
+<ul>
+<li><strong><u>OBJ:</u></strong> How to climb at best rate of climb speed</li>
+<li><strong><u>MOT:</u></strong> For any takeoff (in case of engine failure) & ATC instruction (expedite climb)</li>
+<li><strong><u>TKT:</u></strong> Various airspeeds (how to increase/decrease airspeed)</li>
+<li><strong><u>PROC:</u></strong> Raise the nose from the normal nose-up climb or Lower the nose from the Vx speed</li>
+<li><strong><u>EBK:</u></strong> 67kts (Maximum height given time)</li>
+</ul>
+<br>
+	<li><strong>Mixture control</strong></li>
+<ul>
+<li><strong><u>OBJ:</u></strong> How to lean the mixture</li>
+<li><strong><u>MOT:</u></strong> To increase range & endurance</li>
+<li><strong><u>TKT:</u></strong> Cruise check</li>
+<li><strong><u>PROC:</u></strong><br>
+  Rotate the mixture knob (red knob) counter clockwise gently until the engine runs a little rough<br>
+(or slight drop of RPM about 25-50RPM). You may see a slight increase in RPM before the engine starts to roughen.<br>
+ Then slowly enrich (rotate the knob clockwise 2-3times) the mixture until engine smooths out<br>
+ (or RPM increase back to original RPM)
+(POH section 4. Cruise , leaning mixture)</li>
+<li><strong><u>EBK:</u></strong> Controls the amount of fuel into the cylinder</li>
+</ul>
+<br>
+	<li><strong>Range</strong> (distance)</li>
+<ul>
+<li><strong><u>OBJ:</u></strong> how to fly for range</li>
+<li><strong><u>MOT:</u></strong> Cross-country</li>
+<li><strong><u>TKT:</u></strong> Cruise check (When you do cruise check, you are set up for range according to POH)</li>
+<li><strong><u>PROC:</u></strong> POH (Range profile)</li>
+<li><strong><u>EBK:</u></strong> Range is distance (POH section4 cruise – normal cruising is performed between 55% and 75% power)</li>
+</ul>
+<br>
+	<li><strong>Maximum Range</strong> (might not be able to complete experiment due to weather condition)</li>
+<ul>
+<li><strong><u>OBJ:</u></strong> How to fly for maximum range (fly the greatest distance possible with given amount of fuel)</li>
+<li><strong><u>MOT:</u></strong> Diversion & Low fuel (urgency)</li>
+<li><strong><u>TKT:</u></strong> Various airspeeds</li>
+<li><strong><u>PROC:</u></strong>
+  <br>
+-	Cruise Check (lean the mixture)
+</br>
+<table style="width: 100%">
+  <colgroup>
+      <col span="3" style="width:300px">
+    </colgroup>
+  <tr>
+    <th>2300 RPM</th>
+    <th>Cruise</th>
+    <th>90kts</th>
+  </tr>
+  <tr>
+    <th>2200 RPM</th>
+    <th>Cruise</th>
+    <th>85kts</th>
+  </tr>
+  <tr>
+    <th>2100 RPM</th>
+    <th>Cruise</th>
+    <th>80kts</th>
+  </tr>
+  <tr>
+    <th id='color'>2000 RPM</th>
+    <th id='color'>Cruise</th>
+    <th id='color'>75kts (lean the mixture)</th>
+  </tr>
+  <tr>
+    <th>1900 RPM</th>
+    <th>Cruise</th>
+    <th>65kts</th>
+  </tr>
+</table>
+</li>
+<li><strong><u>EBK:</u></strong> Explain Drag curve in the Flight Training Manual (pg.67)</li>
+</ul>
+<br>
+	<li><strong>Endurance</strong> (time)</li>
+<ul>
+<li><strong><u>OBJ:</u></strong> How to fly for endurance</li>
+<li><strong><u>MOT:</u></strong> Cross-country & Everyday flight (practice area)</li>
+<li><strong><u>TKT:</u></strong> Cruise check (When you do cruise check, you are set up for endurance according to POH)</li>
+<li><strong><u>PROC:</u></strong> POH (Endurance profile)</li>
+<li><strong><u>EBK:</u></strong> Endurance is time (POH section4 cruise – normal cruising is performed between 55% and 75% power)</li>
+</ul>
+<br>
+	<li><strong>Maximum Endurance</strong> (Depends on the weather condition but have to get it)</li>
+<ul>
+<li><strong><u>OBJ:</u></strong> How to fly for maximum endurance (remain airborne for a maximum length of time with given amount of fuel)</li>
+<li><strong><u>MOT:</u></strong> Holding & Low fuel (urgency)</li>
+<li><strong><u>TKT:</u></strong> Various airspeeds</li>
+<li><strong><u>PROC:</u></strong>
+  <br>
+-	Cruise check (lean the mixture)
+</br>
+<table style="width: 100%">
+  <colgroup>
+      <col span="3" style="width:300px">
+    </colgroup>
+  <tr>
+    <th>2300 RPM</th>
+    <th>Cruise</th>
+    <th>90kts</th>
+  </tr>
+  <tr>
+    <th>2200 RPM</th>
+    <th>Cruise</th>
+    <th>85kts</th>
+  </tr>
+  <tr>
+    <th>2100 RPM</th>
+    <th>Cruise</th>
+    <th>80kts</th>
+  </tr>
+  <tr>
+    <th>2000 RPM</th>
+    <th>Cruise</th>
+    <th>75kts</th>
+  </tr>
+  <tr>
+    <th>1900 RPM</th>
+    <th>Cruise</th>
+    <th>65kts</th>
+  </tr>
+  <tr>
+    <th id='color'>1800 RPM</th>
+    <th id='color'>Cruise</th>
+    <th id='color'>60kts (lean the mixture)</th>
+  </tr>
+  <tr>
+    <th>1700 RPM</th>
+    <th>Cruise</th>
+    <th>No longer be able to hold both altitude & speed</th>
+  </tr>
+</table>
+</li>
+<li><strong><u>EBK:</u></strong> Explain Power Curve in the Flight Training Manual (pg.67)</li>
+</ul>
+<br>
+<li><strong>Safety:</strong></li>
+<ul>
+	<li>Traffic (nose is high)</li>
+	<li>Low airspeed (dangerous)</li>
+	<li>Mixture control (don’t pull out all the way or rapidly)</li>
+</ul>
+</ol>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
