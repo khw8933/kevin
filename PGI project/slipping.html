@@ -8,6 +8,18 @@
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+table,tr,th,td{
+  border: 1px solid black;
+}
+ol, ul{
+  line-height: 2;
+}
+h1.center{
+  text-align: center;
+}
+#text-top{
+  vertical-align: text-top;
+}
 #nextprevious{
   float:right;
   margin-right: 20px;
@@ -53,7 +65,140 @@ function goBack() {
   <button onclick="window.location.href = 'circuit.html';" class="next" id="nextprevious">Next &raquo;</button>
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 
-<h2>Slipping</h2>
+<h1 class='center'>Slipping</h1>
+
+<h2>Objective</h2>
+<strong>To teach:</strong>
+<ul>
+	<li>How to use a slip to increase rate of descent without increasing airspeed</li>
+	<li>How to do a slipping turn (increase ROD without increasing airspeed and also turn)</li>
+	<li>How to use a slip to counteract the crosswind for landing</li>
+</ul>
+<h2>Motivation</h2>
+<ul>
+<li><strong>Why:</strong></li>
+<ol>
+	<li>if we are too high on the approach</li>
+	<li>if we want to counteract the crosswind and maintain centerline</li>
+</ol>
+<li><strong>When:</strong> in the circuit (base & final only)</li>
+<img src='forwardslip.jpg' width="30%">
+</ul>
+
+
+
+
+
+
+<h2>Threshold Knowledge Test</h2>
+
+<h2>Essential background Knowledge</h2>
+<ul>
+	<li><strong>Definition (FTM.86):</strong> The bank attitude where yaw or turn is stopped or controlled</li>
+	<li><strong>3 types of slip:</strong></li>
+<ol>
+	<li>Forward slip</li>
+	<li>Slipping turn</li>
+	<li>Sideslip</li>
+</ol>
+</ul>
+
+<h2>Procedures</h2>
+
+<table width="100%">
+  <colgroup>
+      <col span="3" style="width:300px">
+    </colgroup>
+  <tr>
+    <th>Forward Slip</th>
+      <th>Slipping Turn</th>
+      <th>Slide Slip</th>
+    </tr>
+
+<tr>
+  <td>Entry:
+  <ol>
+	<li>Power off (glide) 65kts</li>
+	<li>Roll – bank (into the wind)</li>
+	<li>Apply full opposite rudder
+(for maximum rate of descent)</li>
+</td>
+<td id='text-top'>	Entry:
+  <br><br>
+  Same as forward slip
+</td>
+<td>
+  Entry:
+  <ol>
+  	<li>Power- as required</li>
+  	<li>Roll – bank into wind (counteract the drift)</li>
+  	<li>Apply opposite rudder
+        (center line)</li>
+        </ol>
+    </td>
+  </tr>
+<tr>
+  <td>
+    Maintain:
+    <ol>
+  	<li>Direction – bank (roll)</li>
+    <li>Speed – Attitude (pitch)</li>
+  </ol>
+  </td>
+<td id='text-top'>
+  Maintain:
+  <br><br>
+    Direction – more bank
+</td>
+<td>
+  Maintain runway centerline
+</td>
+<tr>
+  <td>
+    Recovery:
+    <ol>
+      <li>Release rudder</li>
+        <li>Roll wing level</li>
+  </ol>
+  </td>
+  <td id='text-top'>
+    Recovery:
+    <br><br>
+    Same as forward slip
+  </td>
+  <td>
+    One main landing gear touch down first
+  </td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>Safety</h2>
+<ul>
+	<li><strong>Instrument errors caused by slipping</strong>
+    (The slip causes errors in airspeed indications. Some of this is due to the angle of the pitot tube
+    but most of it is due to the location of the static air hole. With the static port on the left and a
+     slip to the left the static pressure (now partly dynamic) is increased. This causes a decrease in the
+     indicated air speed. Your indicated air speed is lower than you are really going. A slip to the right
+     reverses the effects and indications. Your indicated airspeed will be higher than you are really going)</li>
+	<li><strong>Normal Approach</strong> -> 65kts</li>
+	<li><strong>Left slip</strong> -> 60kts</li>
+  <img src='leftslip.jpg' width="30%">
+	<li><strong>Right slip</strong> -> 70kts</li>
+	<li><strong>Turn coordinator indication</strong></li>
+  <img src='turncoordinator.jpg' width="30%">
+</ul>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
