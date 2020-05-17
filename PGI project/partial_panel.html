@@ -8,6 +8,18 @@
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+h1.center{
+  text-align: center;
+}
+ol,ul{
+  line-height: 2;
+}
+#strong{
+  font-weight: bold;
+}
+#underline{
+  text-decoration: underline;
+}
 #nextprevious{
   float:right;
   margin-right: 20px;
@@ -53,7 +65,141 @@ function goBack() {
   <button onclick="window.location.href = 'vor.html';" class="next" id="nextprevious">Next &raquo;</button>
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 
-<h2>Partial Panel Instrument Flying</h2>
+<h1 class='center'>Partial Panel Instrument Flying (CPL)</h1>
+
+<h2>Objective</h2>
+<span id='strong'>To teach:</span>
+<ul>
+	<li>Learn how to control and maneuver the aircraft using partial panel</li>
+</ul>
+<h2>Motivation</h2>
+<ul>
+	<li>If a gyroscopic instrument becomes unsteady or unserviceable, the pilot must be able to continue the flight using partial panel</li>
+	<li>If one of the power sources for the gyroscopic instrument fails, the pilot will have to continue the flight using partial panel</li>
+	<li>Flying VFR and enter cloud – no AI + HI</li>
+	<li>Licensing requirement for CPL license</li>
+</ul>
+<h2>Threshold Knowledge Test</h2>
+<ul>
+  <li>Scan technique: Straight level, Climb, Descent, Turn (remember primary scan?)</li>
+</ul>
+<h2>Essential background Knowledge</h2>
+<ul>
+	<li id='strong'>System Review:</li>
+<ol>
+	<li id='strong'>Static port blockage:</li>
+<ul>
+	<li>Altimeter: Freezes at the current reading</li>
+	<li>VSI: Freezes at zero</li>
+	<li>ASI: Under-read climb / Over-read descent</li>
+</ul>
+<ul>
+	<li><span id='underline'>How to solve:</span> use alternate static (C152s do not have alternate static b/c they are not for IFR)</li>
+	<li><span id='underline'>How to confirm:</span> climb slightly to check if it is really a static port blockage</li>
+</ul>
+	<li id='strong'>Pitot-tube blockage:</li>
+<ul>
+	<li>ASI: (If complete blockage: Under-read descent / Over-read climb) & (If partial blockage: ASI reads zero)</li>
+	<li><span id='underline'>How to solve:</span> turn pitot heat on</li>
+</ul>
+	<li id='strong'>Vacuum pump failure:</li>
+<ul>
+	<li>AI: Tilts sideways</li>
+	<li>HI: Moves unpredictable</li>
+	<li><span id='underline'>How to solve:</span> Check suction gauge(4.5-5.5inHg), verify with TC with AI or MC with HI</li>
+</ul>
+
+	<li id='strong'>Turn Coordinator:</li>
+<ul>
+	<li>Malfunction Flag</li>
+	<li><span id='underline'>How to solve:</span> Electric malfunction checklist</li>
+</ul>
+</ol>
+	<li><span id='strong'>Rate one turn:</span> 3 degrees per second (Each number on HI is 10 seconds)</li>
+<ul>
+ <li>180 degree turn = 1min</li>
+ <li>360 degree turn = 2mins</li>
+ <li>Bank angle = TAS/10 + 7</li>
+</ul>
+</ul>
+<h2>Procedures</h2>
+<ol>
+	<li id='strong'>Straight & Level</li>
+<ul>
+	<li>Straight: Primary instrument (TC + MC)</li>
+<ul>
+	<li>Cruise attitude – TC</li>
+	<li>Direction – MC</li>
+	<li>Control yaw & Wings level</li>
+</ul>
+	<li>Level: Primary instrument (TC + Altimeter + VSI)</li>
+<ul>
+	<li>Cruise attitude – TC</li>
+	<li>Altitude – Altimeter & VSI</li>
+</ul>
+</ul>
+	<li id='strong'>Climb</li>
+<ul>
+	<li>Entry: Primary instruments (TC + ASI)</li>
+<ul>
+	<li>APT</li>
+</ul>
+	<li>Maintain: Primary instruments (TC + ASI)</li>
+	<li>Approaching desired altitude:</li>
+<ul>
+	<li>Call out 200ft below</li>
+	<li>Scan technique changes, primary instruments become (TC + Altimeter)</li>
+</ul>
+	<li>Recovery: Primary instruments (TC + Altimeter)</li>
+<ul>
+	<li>APT</li>
+</ul>
+</ul>
+	<li id='strong'>Descent</li>
+<ul>
+	<li>Entry: Primary instruments (TC + ASI)</li>
+<ul>
+	<li>PAT</li>
+</ul>
+	<li>Maintain: Primary instruments (TC + ASI)</li>
+<ul>
+	<li>Control yaw</li>
+</ul>
+	<li>Approaching desired altitude:</li>
+<ul>
+	<li>Call out 200ft above</li>
+	<li>Scan technique changes, primary instruments become (TC + Altimeter)</li>
+</ul>
+	<li>Recovery: Primary instruments (TC + Altimeter)</li>
+<ul>
+	<li>PAT</li>
+</ul>
+</ul>
+	<li id='strong'>Turns</li>
+<ul>
+	<li>Entry: Primary instruments (TC + MC)</li>
+<ul>
+	<li>Set the time (Each number on HI is 10 seconds)</li>
+	<li>Rate 1 turn</li>
+</ul>
+	<li>Maintain: Primary instruments (TC(Time) + Altimeter + ASI)</li>
+	<li>Recovery: Primary instruments (TC(Time) + Altimeter)</li>
+<ul>
+	<li>Roll out at the last second</li>
+</ul>
+</ul>
+</ol>
+
+<h2>Safety</h2>
+<ul>
+  <li>Small corrections</li>
+    <li>Keep scanning</li>
+      <li>Gentle turn</li>
+        <li>During taxi: confirm if all instruments are working correctly</li>
+          <li>Before turning: ask “clear left/right”</li>
+</ul>
+
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

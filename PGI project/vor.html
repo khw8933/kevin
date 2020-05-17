@@ -8,6 +8,15 @@
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+h1.center{
+  text-align: center;
+}
+ol,ul{
+  line-height: 2;
+}
+#strong{
+  font-weight: bold;
+}
 #nextprevious{
   float:right;
   margin-right: 20px;
@@ -41,6 +50,11 @@ a{
 </style>
 </head>
 <body>
+  <script>
+function goBack() {
+  window.history.back();
+}
+</script>
   <script>backgroundColorHandler();</script>
   <h1><span class='pseudo'><a href="home.html">Home</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
@@ -49,7 +63,102 @@ a{
   <button onclick="window.location.href = 'adf.html';" class="next" id="nextprevious">Next &raquo;</button>
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 
-<h2>VOR</h2>
+<h1 class='center'>VOR</h1>
+
+<h2>Objective</h2>
+<span id='strong'>To teach:</span>
+<ul>
+	<li>How to use VOR to find a position</li>
+	<li>How to track IB/OB</li>
+	<li>How to intercept IB/OB</li>
+	<li>How to find a position using two VORs</li>
+</ul>
+<h2>Motivation</h2>
+
+<span id='strong'>Why:</span>
+<ul>
+	<li>Cross-country</li>
+	<li>Licensing requirement PPL(no test) & CPL</li>
+</ul>
+<h2>Threshold Knowledge Test</h2>
+
+<h2>Essential background Knowledge</h2>
+
+<span id='strong'>Equipment on the ground:</span>
+<ul>
+ <li>Transmitting station (transmits radial signals in all directions 360 degrees)</li>
+ <li>Data box (show VTA): station name, morse code, and etc.</li>
+</ul>
+<img src='vor_ground.jpg' width='30%'>
+<br></br>
+<br></br>
+<div id='strong'>Equipment in the aircraft:</div>
+<ul>
+  <li>VOR receiver</li>
+</ul>
+<img src='vor_aircraft.jpg' width='30%'>
+
+<h2>Procedures</h2>
+
+	<h3>Always do this step before using VOR:</h3>
+  Tune (frequency) – Identify (mores code) – Set (MC with HI & OBS)
+	<h3>From top to bottom</h3>
+  (From flag top radial is the radial you are on and To flag bottom radial is the radial you are on)
+  <br></br>
+  <br></br>
+<ol>
+	<li id='strong'>How to find a position (VOR is not heading sensitive but position sensitive)</li>
+<ul>
+	<li>T-I-S</li>
+	<li>From flag -> CDI needle center -> Read top radial</li>
+</ul>
+	<li id='strong'>How to track OB</li>
+<ul>
+	<li>T-I-S</li>
+	<li>Find a position</li>
+	<li>Fly the top</li>
+	<li>Confirm (Top VOR -> HI -> MC -> From flag)</li>
+</ul>
+	<li id='strong'>How to track IB (Always fly to top VOR)</li>
+<ul>
+	<li>T-I-S</li>
+	<li>To flag -> CDI needle center</li>
+	<li>Fly the top</li>
+	<li>Confirm (Top VOR -> HI -> MC -> To flag)</li>
+</ul>
+	<li id='strong'>How to intercept OB (maximum deviation 10 degrees, 2 degrees per dot)</li>
+EX) Intercept & track OB on 060 radial at 90°
+<ul>
+	<li>T-I-S (HI/MC)</li>
+	<li>OBS -> Radial to the Top (Ex 060)</li>
+	<li>Turn parallel to the top (Ex 060)</li>
+	<li>Check CDI: Right = turn right / Left = turn left</li>
+	<li>Turn right to 060+090 = 150°</li>
+	<li>CDI starts to move (needle alive) -> start turning to the top (Ex 060)</li>
+	<li>Confirm</li>
+</ul>
+	<li id='strong'>How to intercept IB</li>
+EX) Intercept & track IB on 060 radial at 90°
+<ul>
+	<li>T-I-S (HI/MC)</li>
+	<li>OBS -> Radial on the bottom (Ex 060)</li>
+	<li>Turn parallel to the top (Ex 240)</li>
+	<li>Check CDI: Right = turn right / Left = turn left</li>
+	<li>Turn left 240-090 = 150°</li>
+	<li>CDI starts to move (needle alive) -> start turning to the top (Ex 240)</li>
+	<li>Confirm</li>
+</ul>
+	<li id='strong'>How to find a position (fix) using two VORs</li>
+<ul>
+	<li>Find position twice using 2 VORs</li>
+</ul>
+</ol>
+<h2>Safety</h2>
+<ul>
+  <li>VOR check (Tune VOR on the ground to known VOR facility and the tolerance is 4 degrees)</li>
+    <li>Ex) Victoria YYJ find a position 025 on top</li>
+      <li>T-I-S is a must</li>
+</ul>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
