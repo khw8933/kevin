@@ -8,6 +8,15 @@
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+h1.center{
+  text-align: center;
+}
+ol, ul{
+  line-height: 2;
+}
+#strong{
+  font-weight: bold;
+}
 #nextprevious{
   float:right;
   margin-right: 20px;
@@ -54,7 +63,100 @@ function goBack() {
   <button onclick="window.location.href = 'softfield.html';" class="next" id="nextprevious">Next &raquo;</button>
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 
-<h2>Short Field Takeoff and Landing</h2>
+<h1 class='center'>Short Field Takeoff and Landing</h1>
+
+<h2>Objective</h2>
+<strong>To teach:</strong>
+<ul>
+	<li>Take-off and land with minimum runway use</li>
+	<li>Calculate TO/LD distance required for a particular aircraft</li>
+</ul>
+<h2>Motivation</h2>
+
+<strong>When/Why:</strong>
+<ul>
+	<li>Short runway aerodrome</li>
+	<li>Obstacle clearance</li>
+</ul>
+<h2>Threshold Knowledge Test</h2>
+
+<h2>Essential background Knowledge</h2>
+<ul>
+	<li>Landing & Take-off distance from POH (normal condition 10℃ and at sea level)</li>
+	<li>Landing distance for Cessna 152 with normal condition (ground roll – 465ft / 50ft obstacle – 1185ft)</li>
+	<li>Take-off distance for Cessna 152 with normal condition (ground roll – 695ft/ 50ft obstacle – 1290ft)</li>
+	<li>Take the longer distance for calculation (Takeoff distance is usually longer)</li>
+	<li>Safety margin ( add 200ft each side for ground roll and add 400ft each side for 50ft obstacle)</li>
+</ul>
+<h2>Procedures</h2>
+<ol>
+  <li id='strong'>Crew briefing(run-up area):</li>
+<ul>
+<li>	Type of takeoff: Short field (10° of flaps)</li>
+<li>	Runway in use</li>
+<li>	Rotation speed: 50kts</li>
+<li>	Climb out: Vx or Vy (with or without obstacle)</li>
+<li>	Go no go decision point</li>
+</ul>
+<li id='strong'>	At hold short line</li>
+<ul>
+  <li>Request back-track and short delay</li>
+</ul>
+<li id='strong'>	Take-off</li>
+<ul>
+  <li>Line-up (threshold or displaced threshold)</li>
+    <li>Full brake</li>
+      <li>Full power (confirm static power, for Cessna 152, 2280-2380RPM)</li>
+        <li>Release brake and rotate at 50kts</li>
+          <li>Vx or Vy (with or without obstacles)</li>
+</ul>
+<li id='strong'>	At 200ft</li>
+<ul>
+  <li>Increase airspeed to Vy and flaps up</li>
+</ul>
+<li id='strong'>	On downwind</li>
+<ul>
+  <li>Pre-landing check</li>
+    <li>Call (stop and go)</li>
+</ul>
+<li id='strong'>	On base</li>
+<ul>
+  <li>	P – 1500RPM</li>
+    <li>	A - 65kts</li>
+      <li>	Flaps 20°</li>
+        <li>	T - trim</li>
+</ul>
+<li id='strong'>	On final</li>
+<ul>
+  <li>	Flaps 30°</li>
+    <li>	Airspeed 54kts</li>
+</ul>
+<li id='strong'>	Landing</li>
+<ul>
+  <li>	Power off</li>
+    <li>	Main gear touch down</li>
+      <li>	Nose down touch down</li>
+        <li>	Brake (slowly apply to full, don’t slam on the brake which will lock the brake)</li>
+          <li>	Pull back on the yoke for maximum braking</li>
+            <li>	Flaps up for maximum braking</li>
+</ul>
+<li id='strong'>For stop and go</li>
+<ul>
+  <li>	Re-configure for short-field takeoff (R->L)</li>
+</ul>
+  <li id='strong'>	If steeper angle approach is required due to obstacle</li>
+<ul>
+  <li>	Either higher power setting to maintain higher altitude for steeper appraoch or turn base early</li>
+    <li>	Clear obstacle at least double the obstacle height</li>
+</ul>
+</ol>
+<h2>Safety</h2>
+<ul>
+  <li>Flap setting for crosswind (use less flaps)</li>
+    <li>Airspeed for gusty wind landing (gust factor)</li>
+</ul>
+
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();

@@ -8,6 +8,20 @@
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+h1.center{
+  text-align: center;
+}
+ol, ul{
+  line-height: 2;
+}
+.img_center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#strong{
+  font-weight: bold;
+}
 #nextprevious{
   float:right;
   margin-right: 20px;
@@ -54,7 +68,119 @@ function goBack() {
   <button onclick="window.location.href = 'forced_landing.html';" class="next" id="nextprevious">Next &raquo;</button>
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 
-<h2>Crosswind Takeoff and Landing</h2>
+<h1 class='center'>Crosswind Takeoff and Landing</h1>
+
+<h2>Objective</h2>
+<strong>To teach:</strong>
+<ul>
+  <li>How to take-off and land in a crosswind condition</li>
+</ul>
+<h2>Motivation</h2>
+<ul>
+  <li><strong>When:</strong> take-off and landing into the crosswind</li>
+    <li><strong>Why:</strong> Aircraft might drift off the runway if not properly corrected for the wind drift</li>
+</ul>
+<h2>Threshold Knowledge Test</h2>
+<ul>
+  <li>How do we do the side-slip?</li>
+</ul>
+<h2>Essential background Knowledge</h2>
+<ul>
+<h3>Crosswind calculation:</h3>
+	<li id='strong'>Compare wind direction and active runway heading</li>
+  <ul>
+	<li>ATIS(magnetic)</li>
+	<li>METAR/TAF(true)</li>
+	<li>Windsock</li>
+</ul>
+Ex)
+<ol>
+  <li>ATIS: Wind 090 @ 15kts (CZBB) -> Runway 07</li>
+    <li>Wind is 20° off the runway</li>
+      <li>Headwind: 15kts / Crosswind: 5kts</li>
+</ol>
+<img src='windcorrection.jpg' width=20%>
+
+  <li id='strong'>Maximum demonstrated crosswind for a particular aircraft(POH normal procedure section)</li>
+<ul>
+  <li>Cessna 152 – 12kts demonstrated crosswind components(recommended not mandatory)</li>
+	<li>Cessna 172 – 15kts demonstrated crosswind components(recommended not mandatory)</li>
+    <li>These numbers are tested by test pilots, hence, personal limitations might apply</li>
+</ul>
+	<li id='strong'>CRFI (Canadian Runway Friction Index)</li>
+<ul>
+	<li>Scale 0 – 1</li>
+	<li>Crosswind speed has to be within the CRFI number (advisory not mandatory)</li>
+	<li>Lower the CRFI number, less tolerance on crosswind speed</li>
+</ul>
+	<li id='strong'>Taxi input</li>
+<ul>
+	<li>If wind is coming from the front, ailerons into the wind and elevator neutral</li>
+	<li>If wind is coming from the back, ailerons dive away from the wind and elevator forward</li>
+</ul>
+</ul>
+<h2>Procedures</h2>
+<ol>
+<li id='strong'>	Crew briefing(run-up area):</li>
+<ul>
+  <li>Type of takeoff: Crosswind take-off</li>
+    <li>Runway in use</li>
+      <li>Rotation speed: 50kts or more (If airborne and get down, aircraft will drift off the runway)</li>
+        <li>Climb out: Vx or Vy (with or without obstacle)</li>
+          <li>Go no go decision point</li>
+</ul>
+<li id='strong'>	While taxiing</li>
+<ul>
+ <li>Wind input</li>
+</ul>
+<li id='strong'>	Take-off</li>
+<ul>
+  <li>Line-up (have full control column deflection into the wind)</li>
+    <li>Full power (maintain centerline)</li>
+      <li>As the aircraft accelerates, reduce control column input</li>
+        <li>At Vr, control column should be neutral</li>
+          <li>Climb out Vx or Vy (with or without obstacles) and crab into the wind</li>
+            <li>Crab into the wind (pick a landmark)</li>
+</ul>
+<li id='strong'>	Crosswind turn</li>
+<ul>
+	<li>pick a landmark for a nice rectangular circuit</li>
+</ul>
+<li id='strong'>	On downwind</li>
+<ul>
+	<li>Pre-landing check</li>
+	<li>Call (touch and go)</li>
+</ul>
+<li id='strong'>	On base</li>
+<ul>
+	<li>P – 1500RPM</li>
+	<li>A - 65kts</li>
+	<li>Flaps 20°</li>
+	<li>T - trim</li>
+</ul>
+<li id='strong'>	On final</li>
+<ul>
+  <li>	Maintain side-slip (keep the centerline)</li>
+    <li>	200ft go/no-go decision height</li>
+</ul>
+<li id='strong'>	Landing</li>
+<ul>
+  <li>Power off</li>
+    <li>Flare</li>
+      <li>Touch down main landing gear that is banked first, then the other landing gear touch down next</li>
+        <li>Nose gear touch down</li>
+          <li>As the aircraft decelerates, increase the control column wind input again</li>
+</ul>
+</ol>
+<img src='crosswind_circuit.jpg' width="35%" class='img_center'>
+
+
+
+
+<h2>Safety</h2>
+<ul>
+  <li>Use less flaps for crosswind landing (rudder effectiveness)</li>
+</ul>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
