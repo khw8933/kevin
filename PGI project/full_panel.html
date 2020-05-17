@@ -8,6 +8,18 @@
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+h1.center{
+  text-align: center;
+}
+ol,ul{
+  line-height: 2;
+}
+table,td,th,tr{
+  border: 1px solid black;
+}
+#strong{
+  font-weight: bold;
+}
 #nextprevious{
   float:right;
   margin-right: 20px;
@@ -53,7 +65,160 @@ function goBack() {
   <button onclick="window.location.href = 'partial_panel.html';" class="next" id="nextprevious">Next &raquo;</button>
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 
-<h2>Full Panel Instrument Flying</h2>
+<h1 class='center'>Full Panel Instrument Flying</h1>
+
+<h2>Objective</h2>
+<span id='strong'>To teach:</span>
+<ul>
+	<li>Learn how to control and maneuver the aircraft using instrument reference only</li>
+</ul>
+<h2>Motivation</h2>
+<ul>
+  <li><span id='strong'>Why:</span></li>
+<ul>
+  <li>Safety (Fog, smoke, cloud)</li>
+  <li>Licensing</li>
+</ul>
+  <li><span id='strong'>Requirements:</span></li>
+<ul>
+	<li>PPL (5hrs of instrument time of which a maximum of 3hrs can be done in the sim)</li>
+	<li>CPL (20hrs of instrument time excluding PPL instrument time, maximum 10 hours of the 20 hours can be done in the sim)</li>
+	<li>VFR OTT (15hrs dual instrument time of which max of 5hrs in the sim)</li>
+	<li>IFR (40hrs of instrument time of which max of 20hrs in the sim)</li>
+</ul>
+</ul>
+<h2>Threshold Knowledge Test</h2>
+<ul>
+  <li>Power + attitude = Performance (Remember this equation?)</li>
+    <li>(RPM Tachometer + AI = all other instruments)</li>
+      <li>(Control instruments)  = (Performance instruments)</li>
+</ul>
+<h2>Essential background Knowledge</h2>
+
+<h3>	Instruments indication: (Direct/ Indirect)</h3>
+
+<table width="100%">
+  <tr>
+    <th>Instrument</th>
+    <th>Direct indication</th>
+    <th>Indirect indication</th>
+  </tr>
+  <tr>
+    <th>Airspeed indicator</th>
+    <th>Airspeed</th>
+    <th>Pitch</th>
+  </tr>
+  <tr>
+    <th>Attitude indicator</th>
+    <th>Pitch + Bank</th>
+    <th>N/A</th>
+  </tr>
+  <tr>
+    <th>Altimeter</th>
+    <th>Altitude</th>
+    <th>Pitch</th>
+  </tr>
+  <tr>
+    <th>Vertical Speed Indicator</th>
+    <th>Climb/Descent rate</th>
+    <th>Pitch</th>
+  </tr>
+  <tr>
+    <th>Turn Coordinator</th>
+    <th>Roll + Yaw + Co-ordination</th>
+    <th>Bank</th>
+  </tr>
+  <tr>
+    <th>Heading Indicator</th>
+    <th>Heading</th>
+    <th>Bank</th>
+  </tr>
+  <tr>
+    <th>Magnetic Compass</th>
+    <th>Heading</th>
+    <th>Bank</th>
+  </tr>
+  <tr>
+    <th>Tachometer</th>
+    <th>Power</th>
+    <th>Pitch</th>
+  </tr>
+</table>
+<h3>	Scanning:</h3>
+<ul>
+  <li><span id='strong'>Basic</span> – scan each instrument for a few seconds</li>
+    <li><span id='strong'>Radial</span> – involves HUB (Attitude indicator), we start scanning from AI and other instruments and come back to AI</li>
+	<li><span id='strong'>Selective</span> – scan that uses particular instruments to obtain the information necessary for a particular task</li>
+</ul>
+<span id='strong'>EX) Straight and Level:</span><br>
+using radial scan technique to scan from AI to other instruments and using selective scan technique to scan for straight and level information.<br>
+ (Main instruments: Heading indicator + Altimeter)
+
+
+
+<h2>Procedures</h2>
+<ol>
+	<li id='strong'>Straight & Level</li>
+<ul>
+	<li>Review Straight and Level (Cruise attitude + visual reference or landmark for heading)</li>
+	<li>Primary scan for straight (AI + HI)</li>
+	<li>Primary scan for level (AI + Altimeter)</li>
+	<li>Secondary scan (TC + ASI + VSI + MC)</li>
+</ul>
+	<li id='strong'>Climb</li>
+<ul>
+	<li>Entry: Primary instruments (AI + ASI + HI)</li>
+<ul>
+ <li id='strong'>APT</li>
+</ul>
+  <li>Maintain: Primary instruments (AI + ASI + HI)</li>
+    <li>Recovery: Primary instruments (AI + Altimeter + HI)</li>
+<ul>
+  <li>200ft below (scan technique changes)</li>
+    <li>100ft below hand on the throttle</li>
+      <li>50ft APT</li>
+</ul>
+</ul>
+  <li id='strong'>Descent</li>
+<ul>
+  <li>Entry: Primary instruments (AI + ASI + HI)</li>
+<ul>
+<li> PAT</li>
+</ul>
+  <li>Maintain: Primary instruments (AI + ASI + HI)</li>
+    <li>Recovery: Primary instruments (AI + Altimeter + HI)</li>
+</ul>
+  <li id='strong'>Turns</li>
+<ul>
+  <li>Entry: Primary instruments (AI + TC)</li>
+<ul>
+  <li>Pick a heading</li>
+  <li>Roll</li>
+    <li>Control yaw</li>
+      <li>Control nose</li>
+</ul>
+  <li>Maintain: Primary instruments (AI + TC + Altimeter)</li>
+<ul>
+  <li>30° to go (scan changes; HI becomes primary)</li>
+</ul>
+  <li>Recovery: Primary instruments (AI + HI + Altimeter)</li>
+<ul>
+ <li>Roll around 10 degrees before</li>
+ <li>Or roll out 1/2 bank angle before</li>
+</ul>
+</ul>
+</ol>
+
+<h2>Safety</h2>
+<ul>
+	<li>Small corrections</li>
+	<li>Keep scanning</li>
+	<li>Gentle turn</li>
+	<li>During taxi: confirm if all instruments are working correctly</li>
+	<li>Before turning: ask “clear left/right”</li>
+</ul>
+
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
