@@ -20,6 +20,15 @@ a:hover {
 .pseudo{
   color:blue;
 }
+ol,ul{
+  line-height: 2;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+
+}
 </style>
 </head>
 <body>
@@ -28,7 +37,29 @@ a:hover {
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
+  <div class="grid-container">
+    <div class="grid-item">
 <h2>Multi Engine Rating</h2>
+<ul>
+  <li>Circuit</li>
+  <li>Engine Failure En-route</li>
+  <li>Steep Turn</li>
+  <li>Slow Flight</li>
+  <li>Stalls (clean & dirty configuration)</li>
+  <li>Single Engine Go-around</li>
+  <li>Pilot Initiated Shut Down & Single Engine Landing</li>
+</ul>
+</div>
+<div class="grid-item">
+  <h2>Study Material</h2>
+  <ul>
+    <li><a href="https://www.tc.gc.ca/media/documents/ca-publications/tp219-e.pdf" target="_blank">Flight Test Guide</a></li>
+    <li><a href="Multi IFR Syllabus March 2016.pdf" target="_blank">Duchess Syllabus</a></li>
+    <li><a href="DA42 Multi IFR Syllabus.pdf" target="_blank">DA 42 Syllabus</a></li>
+    <li><a href="Duchess system notes.pdf" target="_blank">Duchess System Notes</a></li>
+  </ul>
+</div>
+</div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
