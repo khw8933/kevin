@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+  <title>Navigation</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="nightmode.js"></script>
+  <script src="backgroundColor.js"></script>
+  <style>
+table, td, th{
+  border: 1px solid black;
+}
+ol,ul{
+  line-height: 2;
+}
+#nextprevious{
+  float:right;
+  margin-right: 20px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+a{
+  text-decoration: none;
+}
+.pseudo::after{
+  content: " >";
+}
+.pseudo{
+  color:blue;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+.previous {
+  background-color: #f1f1f1;
+  color: black;}
+
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 0px;
+    width: 113px;
+    border: none;
+    text-align: left;
+    text-decoration: underline;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    display: inline;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+  .bold{
+    font-weight: bold;
+  }
+
+  </style>
+</head>
+<body>
+  <script>
+function goBack() {
+  window.history.back();
+}</script>
+  <script>backgroundColorHandler();</script>
+  <h1><span class='pseudo'><a href="home.html">Home</a></span></h1>
+<input type="button" value="Night Mode" onclick="
+nightModeHandler(this);
+">
+
+
+<button onclick="window.location.href = 'diversion.html';" class="next" id="nextprevious">Next &raquo;</button>
+<button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
+
+<h1 style= "text-align: center">Navigation</h1>
+<h2>Departure Procedure:</h2>
+<ol>
+	<li class='bold'>Giving ETA on the ground:</li>
+<ul>
+  <li>Take the departure time</li>
+  <li>Using back of the Nav Log, calculate ETA to SHP and Destination</li>
+  <li>Follow the departure procedure out of the Boundary Bay toward SHP</li>
+</ul>
+</ol>
+<h2>En-route Procedure:</h2>
+<ol>
+	<li class='bold'>Upon reaching the SHP, perform 5T’s</li>
+<ul>
+	<li>Turn : planned heading</li>
+	<li>Time : check time over SHP and calculate RETA to destination</li>
+	<li>Throttle: cruise power setting (2300rpm c152)</li>
+	<li>Tune: tune frequency to nearby ATC</li>
+	<li>Talk: talk if required</li>
+</ul>
+	<li class='bold'>Verify the position</li>
+  <ul>
+	   <li>Using the VTA chart to verify if airplane is on the track or off the track</li>
+	      <li>If off the track, use <button class='accordion'>visual alteration</button>
+<div class='panel'>
+<p>
+  <ul>
+    <li>Establish your position</li>
+    <li>Fly to a known landmark along the track</li>
+    <li>Once back on the track, apply necessary wind drift correction to maintain track</li>
+  </ul>
+</p>
+</div>
+           to get back on the track</li>
+	         <li>Once back on the track, inform new heading to maintain</li>
+         </ul>
+	<li class='bold'>Ground speed check</li>
+<ul>
+  <li>Upon reaching the ground speed check point, calculate ground speed and RETA to destination using E6B</li>
+</ul>
+</ol>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e8e2b6535bcbb0c9aaf36c1/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<p>
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW  LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://lesson-plans.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//lesson-plans.disqus.com/count.js" async></script>
+</p>
+</body>
