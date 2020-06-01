@@ -1,13 +1,16 @@
 <!doctype html>
 <html>
 <head>
-  <title>CYXX Trip Sequence</title>
+  <title>IFR 100NM Cross-Country</title>
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+ol,ul{
+  line-height: 2;
+}
 h1.a{
   text-align: center;
 }
@@ -35,11 +38,6 @@ a:hover {
   background-color: #f1f1f1;
   color: black;
 }
-.next {
-  background-color: #4CAF50;
-  color: white;
-}
-
 
 </style>
 </head>
@@ -54,10 +52,34 @@ function goBack() {
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
-  <button onclick="window.location.href = '100nm_xc.html';" class="next" id="nextprevious">Next &raquo;</button>
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
-<h1 class="a">CYXX Trip Sequence</h1>
-<img src="cyxxtrip_sim.jpg" width=60%>
+<h1 class="a">IFR 100NM Cross-Country</h1>
+
+<h2>Route: (SID 5) CZBB – CYYJ (RNAV 27 or ILS 09) – CYXX (ILS 07) – CZBB (RNAV 31)</h2>
+<h3>CZBB – CYYJ</h3>
+<ol>
+<li>Find a preferred IFR route on CFS</li>
+<ul>
+	<li>CZBB DEP TO W (WC HUH V495 YYJ)</li>
+	<li>Depends on the runway at CYYJ</li>
+<ul>
+  <li>If runway 27 is active, for RNAV 27, V495 ->YYJ -> OBSOP -> LAFFO -> TUGUK -> XOTAN -> RWY27</li>
+    <li>If runway 09 is active, for ILS 09, V495 -> YYJ ->BRANY -> VIXAS -> MEDBA -> MILL BAY -> RWY09</li>
+</ul>
+	<li>Fly the missed approach procedure</li>
+</ul>
+<h3>CYYJ - CYXX</h3>
+	<li>Find a preferred IFR route on CFS</li>
+  <ul>
+	<li>CYYJ DEP TO E (HUH)</li>
+	<li>V495 -> HUH -> WC -> XX -> CYXX ILS RWY 07</li>
+	<li>Fly the missed approach procedure</li>
+</ul>
+<h3>CYXX – CZBB</h3>
+
+	<li>HUH -> PENIN -> GUDOD -> ETMUL -> CZBB RNAV RWY 31</li>
+
+</ol>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
