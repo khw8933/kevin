@@ -32,6 +32,33 @@ a:hover {
 .pseudo{
   color:blue;
 }
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 260px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+    margin: auto;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.blue{
+  color: blue;
+}
 </style>
 </head>
 <body>
@@ -76,9 +103,227 @@ a:hover {
             <li>License, Radio certificate, and medical</li>
               <li>Jorney Log</li>
 </ol>
+<br></br>
+<button class='accordion'>Possible Airworthiness Questions</button>
+<div class='panel'>
+  <p>
+<ul>
+ <li>Name all required documents to be carried on board.</li>
+ <li>Determine the validity of all documents.</li>
+ <li>Determine the required maintenance has been done.</li>
+ <li>Determine the number of flying hours remaining before required service or maintenance.</li>
+ <li>Ensure that compliance with any conditions or limitations on the maintenance release can be achieved.</li>
+ <li>Determine the impact of deferred defects on aeroplane operations for the proposed flight.</li>
+ <li>Explain the process for dealing with aircraft unserviceabilities arising during a flight.</li>
+ <br></br>
+</ul>
+<ol>
+<li>Certificate of Registration (See sample Certificate of Registration in Part IV - Annex, p. 123)</li>
+<ul>
+	<li>What does the Certificate of Registration tell you?</li>
+<span class='blue'>The Certificate of Registration gives the nationality and registration mark, aircraft manufacturer,
+   model and serial number, the purpose, name and address of the owner, owner registration date, certificate issue date,
+    and signature for the Minister of Transport</span>
+	<li>How long is the Certificate of Registration valid? What invalidates it?</li>
+<span class='blue'>The Certificate of Registration remains valid as long as the ownership does not change,
+   or the owner's address does not change. The Certificate of Registration becomes invalid when the aircraft
+    is destroyed or taken out of service permanently.<br>
+Note: The registration of the airplane (ex. C-GFAS) does not change following a change of ownership.</span>
+	<li>How long does the owner of an aircraft have to notify the Minister of Transport of a change of address?</li>
+<span class='blue'>The owner has 7 days to complete the change of address information on the Certificate
+  of Registration and mail it in.</span>
+ <li>What is the procedure with respect to the Certificate of Registration when the aircraft is sold?</li>
+<span class='blue'>To effect a change of ownership, the reverse side of the Certificate of Registration must be filled out and mailed to the Minister of Transport within 7 days. The pink copy remains with the aircraft and is valid for a maximum of 60 days or until the new Certificate of Registration is received, whichever comes first.
+(If a new certificate is not received within 60 days, the aircraft is no longer considered registered)</span>
+</ul>
+<li>Certificate of Airworthiness (See sample Certificate of Airworthiness in Part IV - Annex, p. 123)</li>
+<ul>
+	<li>For how long is the original Certificate of Airworthiness valid?</li>
+<span class='blue'>Indefinitely, if the aircraft continues to meet the conditions under which it was issued; that is,
+   as long as the aircraft is maintained in accordance with the requirements of the controlling agency.<br>
+Note: A Certificate of Airworthiness is issued to a specific aircraft, not to a person/owner.
+Therefore, a change of address or ownership does not invalidate it.</span>
+	<li>What temporarily invalidates the Certificate of Airworthiness?</li>
+<span class='blue'>Temporary invalidation of the Certificate of Airworthiness is caused by:<br>
+a. Failure to comply with Airworthiness Directives (AD).<br>
+b. Failure to do required maintenance inspections at required intervals, unless on an extension.<br>
+c. An action that contradicts the Pilot's Operating Handbook<br>
+d. Any minor or major accident.<br>
+e. Any unscheduled maintenance report (snag) written in the Journey Logbook.<br>
+</br>
+* Airworthiness Directives (AD) are notices issued by aircraft or engine manufacturers informing
+of a defect or problem that include corrective measures. Once an AD has been complied with,
+the AME (Aircraft Maintenance Engineer) must make the necessary entry in the Technical Logbook.<br>
+** A good example is the Weight and Balance. If a pilot takes off with a weight greater than that allowed,
+the Certificate of Airworthiness is invalid.</span>
+	<li>How often must the Certificate of Airworthiness be re-validated?</li>
+<span class='blue'>Once a year</span>
+	<li>How is it re-validated?</li>
+<span class='blue'>By submitting an Annual Airworthiness Information Report (see sample in Part IV - Annex, p.124)</span>
+	<li>Is a Certificate of Airworthiness issued for amateur-built aircraft?</li>
+<span class='blue'>No. Amateur-built aircraft are issued a Flight Permit.</span>
+</ul>
+<li>Weight and Balance Report (See sample Weight and Balance Report in Part IV - Annex, p. 125)</li>
+<ul>
+  <li>Define Basic Empty Weight (BEW)</li>
+<span class='blue'>The Basic Empty Weight includes:<br>
+a. Weight of the standard airplane (ie, airframe, engine, standard equipment, unusable fuel)<br>
+b. All optional equipment.<br>
+c. Full oil.</span>
+  <li>Define maximum takeoff weight</li>
+<span class='blue'>Maximum takeoff weight is the maximum weight approved for the start of the takeoff run.</span>
+  <li>How does the maximum takeoff weight differ from the maximum ramp weight?</li>
+<span class='blue'>The maximum ramp weight includes the fuel that will be used for start, taxi and run-up.
+  Therefore, as a result of the fuel already burned, maximum takeoff weight will be less than maximum ramp weight.<br>
+Note: Maximum ramp weight is usually not used for small aircraft.</span>
+
+ <li>What is the difference between normal and utility categories?</li>
+<span class='blue'>The utility category is solely for the purpose of training pilots in certain flight maneuvers and,
+   therefore, is usually subject to some restrictions. In the normal category, maximum gross weight operations
+    are permitted, but certain maneuvers, such as spins and steep turns, are prohibited.</span>
+ <li>Where can the pilot learn of the category(ies) for which the aircraft is approved as well as any related limitations?</li>
+<span class='blue'>This information is found in the Pilot's Operating Handbook.</span>
+ <li>Is an aircraft considered airworthy if overloaded/ Why?</li>
+<span class='blue'>No. Compliance with weight limitations is part of the airworthiness validity</span>
+ <li>How often does an aircraft have to be re-weighed?</li>
+<span class='blue'>Aircraft must be re-weighed and an amended Weight and Balance Report produced
+  if a change in weight of more than 2% of the empty weight has occurred, or
+  if the weight change cannot be measured (for example, as may occur if an aeroplane is re-painted).<br>
+Note: If the weight of the aircraft exceeds 12,500 lbs, it must be re-weighed every 5 years.</span>
+ <li>What important information is found on the original Weight and Balance Report that will not be found elsewhere?</li>
+<span class='blue'>The following are found in the original Weight and Balance Report, and not found elsewhere:<br>
+a. The date of manufacture of the aircraft.<br>
+b. The actual unusable fuel.<br>
+c. The amount of full oil.</span>
+</ul>
+<li>Journey Logbook</li>
+<ul>
+ <li>Does the Journey Logbook have to be carried on board for each flight?</li>
+<span class='blue'>The answer is yes, but with one notable exception:<br>
+  if the pilot does not plan to land and shut down at a location other than the departure base,
+  the Journey Logbook need not be carried on board</span>
+ <li>Are aircraft inspections based on air time or flight time?</li>
+<span class='blue'>Aircraft inspections are based on air time</span>
+ <li>What type of inspection schedule is the aircraft on?</li>
+<span class='blue'>50-100-50-200 at 50 hour intervals (refer to Maintenance Control Manul)</span>
+ <li>When was the last inspection done and which one was it?</li>
+<span class='blue'>Refer to Journey Logbook</span>
+ <li>When is the next inspection due?</li>
+<span class='blue'>Refer to Journey Logbook</span>
+ <li>If the inspection was due at 1,050 hours, can you fly the aircraft beyond that time? If yes, under what circumstances?</li>
+<span class='blue'>No (refer to MCM)</span>
+ <li>How do you know that an annual inspection has been carried out?</li>
+<span class='blue'>Refer to Journey Logbook</span>
+ <li>If a snag is reported in the Remarks section of the Journey Logbook, can you fly the aircraft? Is it airworthy?</li>
+<span class='blue'>Under no circumstances is the aircraft legal to fly if any type of problem is written in the Remarks,
+   unless an AME has checked it and signed it off</span>
+<li>How do you correct an error in the Journey Logbook?</li>
+<span class='blue'>All errors should be corrected with a single line through them. The correct information should then
+   be entered. Errors must never be erased or masked with "liquid paper".<br>
+Note: AII entries should be made in ink'</span>
+
+ <li>How often must the compass be swung?</li>
+<span class='blue'>The compass must be swung annually</span>
+ <li>How do you verify that the compass has been swung?</li>
+<span class='blue'>Refer to Journey Logbook</span>
+ <li>When do you require an ELT?</li>
+<span class='blue'>An ELT is required on board at all times unless the aircraft is operated within 25
+  nautical miles of the departure aerodrome</span>
+ <li>How often and by whom must the ELT be certified? Is an entry required in the Journey Logbook?</li>
+<span class='blue'>An ELT must be certified once per year, by an avionics shop.
+  An entry must be made in the Journey Logbook</span>
+ <li>For how long is an ELT battery good?</li>
+<span class='blue'>ELT batteries are good for two years from the date of manufacture</span>
+ <li>At what time can you check if the ELT is operational?</li>
+<span class='blue'>ELT operation can be checked during first five minutes past each hour for no more than five seconds.</span>
+ <li>When was the last inspection of the pitot-static system performed? How often should it be done?</li>
+<span class='blue'>he pitot-static system must be certified once every two year</span>
+ <li>Once a Journey Logbook has been completely filled, how long must it be retained?</li>
+<span class='blue'>For a period of not less than three years.</span>
+ <li>Using the Journey Logbook, demonstrate that the aircraft is airworthy.</li>
+<span class='blue'>When using the Journey Logbook to demonstrate that the aircraft is airworthy:<br>
+a. Check if the maintenance inspections have been done.<br>
+b. Check the last air time entry against the next “inspection due" air time.<br>
+c. Check if the last compass swing was done within the past year.<br>
+d. Check if the ELT was certified within the past year.<br>
+e. Check to ensure that no "snags" are recorded in the Remarks section (for the aircraft to be airworthy,
+any snag must have been signed off by an AME).<br>
+f. Check if the pitot-static system has been certified within the past two years</span>
+</ul>
+
+<li>Pilot’s Operating Handbook</li>
+<ul>
+<li> What type of information can be found in the Pilot's operating Handbook (POH)? Why do you think it is important to have it on board?</li>
+<span class='blue'>The Pilot's Operating Handbook (POH), sometimes called the Aircraft Flight Manual (AFM),
+   has all the pertinent information for the make and model of the aircraft. It allows you to research any
+   information that might be needed while you are in the aircraft (power settings, emergency procedures,
+   takeoff, cruise and landing performance tables, etc.).
+   It also provides an equipment list detailing all the equipment available for a particular model of aircraft
+   and specifies whether each item of equipment is required, optional, etc.</span>
+</ul>
+<li>Crew licenses and Medical Certificates</li>
+<ul>
+ <li>List the documents any flight crew member must carry on board while operating an aircraft</li>
+<span class='blue'>There are three documents that any flight crew member must carry on board while operating an aircraft:<br>
+a. License or permit<br>
+b. Valid medical<br>
+c. Radiotelephone Operator's Certificate (if operating a radio)</span>
+ <li>What class of medical is required for a private pilot license and for how long is it valid?</li>
+<span class='blue'>A Category III medical is required. It is valid for 60months up to 40 years of age.
+  Over age 40, it is valid for 24 months</span>
+ <li>What class of medical is required for a commercial pilot license and for how long is it valid?</li>
+<span class='blue'>A Category I medical is required. It is valid for 12months up to 40 years of age.
+   Over age 40, it is valid for 6 months.</span>
+ <li>When does your medical expire?</li>
+
+ <li>For how long is the Radiotelephone Operator’s Certificate valid?</li>
+<span class='blue'>A Radiotelephone Operator's Certificate is valid for life.</span>
+</ul>
+<li>Proof of Insurance</li>
+<ul>
+ <li>Does proof of insurance for the aircraft have to be on board for each flight?</li>
+<span class='blue'>Yes. Proof of insurance must be carried on board for all flights except for commercial aircraft.</span>
+</ul>
+<li>Additional questions</li>
+<ul>
+ <li>May the Technical Logbook be carried on board the aircraft?</li>
+<span class='blue'>The Technical Logbook must not be carried on board aircraft at the same time as the Journey Logbook.</span>
+ <li>How long must Technical Logbooks be kept once they are full?</li>
+<span class='blue'>They must be kept until such time as the aircraft is no longer registered</span>
+ <li>Should a Radio Station License be carried on board during flight?</li>
+<span class='blue'>No. It is no longer required for flights in Canada. However,
+  a valid radio station license issued by Industry Canada is required for international flights.</span>
+ <li>What is the minimum instrumentation for day VFR flight? (MOOFACTAR)</li>
+<span class='blue'>
+Manifold pressure gauge<br>
+Oil temp gauge<br>
+Oil pressure gauge<br>
+Fuel quantity indicator<br>
+Airspeed indicator<br>
+Compass<br>
+Tachometer<br>
+Altimeter<br>
+Radiocommunication and/or radio navigation</span>
+ <li>What is the minimum instrumentation for night VFR flight?</li>
+<span class='blue'>In addition to MOOFACTAR:<br>
+Spare fuses<br>
+Attitude indicator<br>
+Turn coordinator<br>
+Directional gyro<br>
+Sensitive pressure altimeter<br>
+Pitot heat<br>
+Position and anti-collision lights<br>
+Instrument lights<br>
+Landing light (if carrying passengers)<br>
+Outside air temperature gauge<br>
+Vertical speed indicator</span>
+</ul>
+</ol>
+  </p>
+</div>
 	<li><h3>Aircraft Performance(Speeds, C of G, Instruments, etc,. )</h3></li>
 <ul>
-  <li>Memorize every speed names, definition, when and that airspeed is used and the actual number of speed</li>
+  <li>Memorize every speed name, definition, when and why that airspeed is used and the actual number of speed</li>
     <li>Characteristics of having rearward Center of Gravity and forward Center of Gravity</li>
       <li>Student will be asked what to do if the line on the weight and balance sheet is drawn outside of the envelope</li>
         <li>How each instrument work and power source of each instrument.</li>
@@ -129,7 +374,22 @@ a:hover {
 </ol>
 
 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
