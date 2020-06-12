@@ -1,21 +1,24 @@
 <!doctype html>
 <html>
 <head>
-  <title>Precautionary Landing</title>
+  <title>Contingencies</title>
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+ol, ul{
+  line-height: 2;
+}
 h1.center{
   text-align: center;
 }
-ol,ul{
-  line-height: 2;
-}
-#strong{
+.bold{
   font-weight: bold;
+}
+h4{
+  display: inline;
 }
 #nextprevious{
   float:right;
@@ -59,68 +62,83 @@ function goBack() {
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
-  <button onclick="window.location.href = 'diversion.html';" class="next" id="nextprevious">Next &raquo;</button>
+  <button onclick="window.location.href = 'shortfield.html';" class="next" id="nextprevious">Next &raquo;</button>
   <button onclick="goBack()" class="previous" id="nextprevious">&laquo; Previous</button>
 
-<h1 class='center'>Precautionary Landing</h1>
+<h1 class='center'>Contingencies</h1>
 
 <h2>Objective</h2>
-<span id='strong'>To teach:</span>
 <ul>
-	<li>The procedures for a landing at an aerodrome where the surface condition is unknown,<br>
-    an unfamiliar aerodrome, or an unprepared surface (use actual example CYCW and use CFS)</li>
+  <li>Lost Communications</li>
+	<li>Runway Change</li>
+	<li>Bounce / High flare recovery</li>
+	<li>Spacing</li>
+	<li>Overshoot</li>
+	<li>Engine failure</li>
 </ul>
-<h2>Motivation</h2>
-<span id='strong'>Situations:</span>
+<h2 class='inline'>WHY/WHEN</h2> Pre – solo emergency procedures
+<h2>Procedures</h2>
+<ol>
+  <li class='bold'>Lost Communications</li>
 <ul>
-  <li>Weather deterioration</li>
-  <li>Night (darkness)</li>
-  <li>Low fuel</li>
-  <li>Mechanical problems (partial power & rough engine)</li>
-  <li>Sick passengers</li>
+	<li>Aviate (keep flying)</li>
+	<li>Navigate (flying circuits until downwind)</li>
+	<li>Investigate (cause check)</li>
+<ol>
+	<li>Frequency</li>
+	<li>Radio switch & volume check</li>
+	<li>Headset check</li>
+	<li>Avionics switch</li>
+  <li>Circuit breaker check</li>
+	<li>Stuck mic (T sign when mic switch is keyed/ say intention to tower and turn off the radio)</li>
+</ol>
+	<li>Communicate</li>
+<ol>
+	<li>Squwak 7600</li>
+	<li>Check light signal from the tower</li>
+</ol>
 </ul>
-<h2>Threshold Knowledge Test</h2>
+	<li class='bold'>Runway Change in Controlled aerodrome / Uncontrolled aerodrome</li>
 <ul>
-	<li>Where did we get the wind information in flight?</li>
-	<li>Which color of the field do we look for?</li>
+	<li>Tower will instruct in a controlled aerodrome</li>
+	<li>Extend downwind and cross midfield in an uncontrolled aerodrome</li>
 </ul>
-<h2>Essential background Knowledge</h2>
+	<li class='bold'>Spacing</li>
 <ul>
-<li>Considerations:</li>
-<ul>
-	<li>C – Civilization (communications)</li>
-	<li>O - Obstacles</li>
-	<li>W – winds (in to the wind) (ATIS, Smoke, Water ripple, Trees)</li>
-	<li>L – Length (aprx.2500ft, half the length of the runway 07)</li>
-	<li>S – Surface (look for light green field or yellowish color)</li>
-	<li>S – Slope (level)</li>
+	<li>Traffic numbers</li>
+	<li>Slow down</li>
+  <li>Right of way</li>
+	<li>Base turn (wing abeam other aircraft or ahead aircraft turn final)</li>
 </ul>
 
-	<li>Altitude consideration for surface check (2/3 ground clearance & 1/3 sky clearance from the cloud)<br>
-Ex) if the cloud is at 1200ft, 800ft is the altitude you will fly at to check the surface of the landing area</li>
-</ul>
-<h2>Procedures</h2>
+	<li class='bold'>Bounce & High flare recovery</li>
 <ul>
-	<li>Stabilize the aircraft (2100RPM/ 20degree flaps/70kts (C152)  &  2000RPM/20degree flaps (C172))</li>
-	<li>Checklist</li>
-	<li>Pick a field</li>
-	<li>Plan the approach & inspection</li>
+	<h4>Bounce</h4>
+	<li>Cause: landing too fast & landing too hard</li>
+	<li>Recovery: overshoot</li>
+	<h4>High flare</h4>
+	<li>Cause: flare too early</li>
+	<li>Recovery: overshoot</li>
 </ul>
+	<li class='bold'>Overshoot</li>
+<ul>
+	<li>Aviate</li>
 <ol>
-	<li>Do the 1st high pass inspection at 1000ft (COWLSS check) (start from upwind side or crossing midfield) (FTM P.122)</li>
-	<li>Do the 2nd low pass inspection at 500ft (COWLSS check and overshoot)</li>
-  <li>After overshoot, do 3p's</li>
+	<li>Power up (full)</li>
+	<li>Nose up (on the horizon)</li>
+	<li>Flaps up (in stages)</li>
+</ol>
+	<li>Navigate</li>
+	<li>Communicate</li>
+</ul>
+	<li class='bold'>Engine failure (TKT crew briefing)</li>
 <ul>
-  <li>PAN PAN call (121.5Mhz)</li>
-    <li>Passenger briefing</li>
-      <li>Pre-landing check</li>
+	<li>On the runway</li>
+	<li>Right after the takeoff</li>
+	<li>Circuit height</li>
 </ul>
 </ol>
-<h2>Safety</h2>
-<ul>
-	<li>Look out for traffic</li>
-	<li>No lower than 500ft AGL for the approach</li>
-</ul>
+
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
