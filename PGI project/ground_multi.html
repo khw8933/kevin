@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <title>Multi Ground Items</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="nightmode.js"></script>
+<script src="backgroundColor.js"></script>
+<style media="screen">
+h1.a{
+  text-align: center;
+}
+ol, ul{
+  line-height: 2;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.pseudo::after{
+  content: " >";
+}
+.pseudo{
+  color:blue;
+}
+</style>
+</head>
+<body>
+  <script>backgroundColorHandler();</script>
+  <h1><span class='pseudo'><a href="multi.html">Previous Page</a></span></h1>
+  <input id = 'night_day' type="button" value="Night Mode" onclick="
+  nightModeHandler(this);
+  ">
+<h1 class="a">Multi Ground Items</h1>
+
+<h2>Duchess Systems</h2>
+<ol>
+  <li>Propeller System</li>
+  <p>
+    <ul>
+  <li>The propellers are constant speed, full feathering, and 2 blade (10” ground clearance)</li>
+  <li>Counter rotating prop system. Left turns clockwise, right turns counter clockwise (both engines are critical)</li>
+  <li>2 forces are acting against each other: feathering forces and pitch controlling forces</li>
+  <li>Feathering forces: feathering springs, nitrogen charge, counterweight</li>
+	<li>Pitch controlling forces: speeder spring, flyweights, pilot valve</li>
+  <li>Propeller Governer moves oil back and forth through the propeller hub to make sure the prop is at the pitch and speed that you want</li>
+  <li>Flyweights are rotating with an engine. As a pilot move the prop lever,
+     essentially the pilot is controlling the tension of the speeder spring.
+	   If a pilot moves the prop lever forward, the tension of the speeder spring will increase which makes flyweights
+     fall inside and pilot valve moves down and the high pressure oil will enter the propeller hub to move the propeller
+     into a fine pitch</li>
+	<li>If a pilot moves the prop lever backward, the tension of the speeder spring will decrease,
+      which makes flyweights pull outside, and pilot valve moves up, and the oil in the propeller hub
+      will draw out back to the sump</li>
+  <li>As RPM increases (overspeed), flyweights spin faster and due to the centrifugal force,
+      flyweights will spin and pull outwards. Then pilot valve will move up, and the oil in the propeller hub
+       will move out into the oil sump until the centrifugal force equals to the spring tension that the pilot set,
+        thus, propeller moves to a coarse pitch</li>
+  <li>As RPM decreases (underspeed), flyweights spin less, and fall in towards the center, move the pilot valve down,
+        letting the high pressure oil to enter the propeller hub and increase the RPM, thus, fine pitch</li>
+</ul>
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YthzXE7Odx4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</ol>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5e8e2b6535bcbb0c9aaf36c1/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+<p>
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://lesson-plans.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+<script id="dsq-count-scr" src="//lesson-plans.disqus.com/count.js" async></script>
+</p>
+</body>
+</html>

@@ -1,13 +1,19 @@
 <!doctype html>
 <html>
 <head>
-  <title>Multi engine rating</title>
+  <title>Multi Flight Items</title>
   <meta charset="utf-8">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <link rel="stylesheet" href="style.css">
 <script src="nightmode.js"></script>
 <script src="backgroundColor.js"></script>
 <style media="screen">
+h1.a{
+  text-align: center;
+}
+ol, ul{
+  line-height: 2;
+}
 a {
   text-decoration: none;
 }
@@ -20,51 +26,24 @@ a:hover {
 .pseudo{
   color:blue;
 }
-ol,ul{
-  line-height: 2;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 10px;
-
-}
 </style>
 </head>
 <body>
   <script>backgroundColorHandler();</script>
-  <h1><span class='pseudo'><a href="home.html">Home</a></span></h1>
+  <h1><span class='pseudo'><a href="multi.html">Previous Page</a></span></h1>
   <input id = 'night_day' type="button" value="Night Mode" onclick="
   nightModeHandler(this);
   ">
-  <div class="grid-container">
-    <div class="grid-item">
-<h2>Multi Engine Rating</h2>
-
-
-<script>
-var items = ['Ground Items','Flight Items'];
-var files = ['ground_multi','flight_multi'];
-</script>
-<ol>
-  <script>
-  for(i = 0; i < items.length; i++){
-    document.write('<li>'+'<a href="'+files[i]+'.html">'+items[i]+'</a>'+'</li>');
-  }
-  </script>
-</ol>
-
-</div>
-<div class="grid-item">
-  <h2>Study Material</h2>
-  <ul>
-    <li><a href="https://www.tc.gc.ca/media/documents/ca-publications/tp219-e.pdf" target="_blank">Flight Test Guide</a></li>
-    <li><a href="Multi IFR Syllabus March 2016.pdf" target="_blank">Duchess Syllabus</a></li>
-    <li><a href="DA42 Multi IFR Syllabus.pdf" target="_blank">DA 42 Syllabus</a></li>
-    <li><a href="Duchess system notes.pdf" target="_blank">Duchess System Notes</a></li>
-  </ul>
-</div>
-</div>
+<h1 class="a">Multi Flight Items</h1>
+<ul>
+  <li>Circuit</li>
+  <li>Engine Failure En-route</li>
+  <li>Steep Turn</li>
+  <li>Manoeuvring at Reduced Airspeed (1.3 VSO KIAS or VMC+10 knots)</li>
+  <li>Stalls (clean & dirty configuration)</li>
+  <li>Single Engine Go-around</li>
+  <li>Pilot Initiated Shut Down & Single Engine Landing</li>
+</ul>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -103,3 +82,4 @@ s.setAttribute('data-timestamp', +new Date());
 <script id="dsq-count-scr" src="//lesson-plans.disqus.com/count.js" async></script>
 </p>
 </body>
+</html>
